@@ -41,7 +41,9 @@
    4. Reentrancy (RENT) is a function-level bug. That is why we showed ContractName.FunctionName in vulnerabilities.json file.
    5. Moreover, Locked Ether (LE) is a contract-level bug. So, if the tool says that the contract is vulnerable for LE, we printed tool-name for LE in the vulnerabilities.json file.
 
-##How to collect Real World Smart Contracts from Etherscan network
+
+
+##How to collect Real World Smart Contracts from Etherscan API
 
 ###Script
  scripts/ExtFromEtherScan.py
