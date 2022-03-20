@@ -43,14 +43,14 @@
 
 
 
-##How to collect Real World Smart Contracts from Etherscan API
+## How to collect Real World Smart Contracts from Etherscan API
 
 Use script scripts/ExtFromEtherScan.py
 
-###Script
+### Script
  scripts/ExtFromEtherScan.py
 
-###Usage
+### Usage
  1. python3 ExtFromEtherScan.py
 
  2. contracts.csv contains addresses of Real World Smart Contracts
