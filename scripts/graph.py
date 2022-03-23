@@ -31,28 +31,6 @@ class Graph:
     }
 
 
-    def tool_result(self):
-        tools=['mythril','oyente','osiris','slither','smartcheck']
-        filename=data_path+'scrawld_res_all.txt'
-        file1 = open(filename, 'r')
-        Lines = file1.readlines()
-        for tool_name in tools:
-            for key in self.dict_contracts_per_vuln.keys():
-                self.dict_contracts_per_vuln[key]=0
-            for key in self.dict_contracts_per_vuln.keys():
-                file_list = []
-                for line in Lines:
-                    # print(line.rstrip().split(' ')[0])
-                    if key in line and tool_name in line and line.rstrip().split(' ')[0] not in file_list:
-                        file_list.append(line.rstrip().split(' ')[0])
-                        self.dict_contracts_per_vuln[key] = self.dict_contracts_per_vuln[key] + line.count(key)
-            print(tool_name, self.dict_contracts_per_vuln)
-            xlabel="Vulnerability Name"
-            ylabel="Number of Contracts"
-            is_rotate=1
-            self.plot_graph(self.dict_contracts_per_vuln, graph_path+tool_name+'.pdf',xlabel,ylabel, is_rotate)
-
-
     def majority_warnings_per_vuln(self):
         filename=data_path+'scrawld_majority_all.txt'
         file1 = open(filename, 'r')
@@ -149,6 +127,5 @@ elif (int(choice) == 2):
     graph.majority_warnings_per_vuln()
 elif (int(choice) == 3):
     graph.get_no_of_vuln()
-elif (int(choice) == 4):
-    graph.tool_result()
+
 
