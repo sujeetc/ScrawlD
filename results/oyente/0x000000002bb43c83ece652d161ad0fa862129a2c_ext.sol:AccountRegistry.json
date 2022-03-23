@@ -1,0 +1,79 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:338:9: Warning: Timestamp Dependency.\n        require(account.lastAccess + 7 days <= now)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:419:24: Warning: Integer Overflow.\n        address appt = candidate.appointer\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:440:24: Warning: Integer Overflow.\n        address dncr = board.denouncer\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:462:13: Warning: Integer Overflow.\n        if (accounts[appt].membership\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:373:16: Warning: Integer Overflow.\n            && accounts[_proposal].membership\nInteger Overflow occurs if:\n    accounts[_voter].membership = 2", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:380:16: Warning: Integer Overflow.\n        return accounts[_voter].membership", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:485:13: Warning: Integer Overflow.\n            Devouch(_proposer, _devouch)\nInteger Overflow occurs if:\n    accounts[appt].membership = 0\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:441:13: Warning: Integer Overflow.\n        if (accounts[dncr].membership\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:442:13: Warning: Integer Overflow.\n            board.denouncer\nInteger Overflow occurs if:\n    accounts[dncr].membership = 0\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:422:13: Warning: Integer Overflow.\n            Nominated(_board, _vouch)\nInteger Overflow occurs if:\n    accounts[appt].membership = 0\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:502:9: Warning: Integer Overflow.\n        accounts[proposal].membership", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:450:9: Warning: Integer Overflow.\n        board.membership\nInteger Overflow occurs if:\n    accounts[dncr].membership = 64\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:416:13: Warning: Integer Overflow.\n        if (candidate.membership\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:482:24: Warning: Integer Overflow.\n        address appt = candidate.devoucher\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:308:9: Warning: Integer Overflow.\n        account.membership", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:566:9: Warning: Integer Overflow.\n        BannedProposal(_proposal, _reason)\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:528:9: Warning: Integer Overflow.\n        accounts[_proposal].membership\nInteger Overflow occurs if:\n    accounts[_proposal].membership = 0\n    accounts[msg.sender].membership = 1", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:443:13: Warning: Integer Overflow.\n            Denounced(_board, _reason)\nInteger Overflow occurs if:\n    accounts[dncr].membership = 0\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:492:9: Warning: Integer Overflow.\n        candidate.membership\nInteger Overflow occurs if:\n    accounts[appt].membership = 64\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:550:9: Warning: Integer Overflow.\n        account.membership\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:420:13: Warning: Integer Overflow.\n        if (accounts[appt].membership\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:576:9: Warning: Integer Overflow.\n        account.membership\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:518:9: Warning: Integer Overflow.\n        accounts[proposal].membership", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:484:13: Warning: Integer Overflow.\n            candidate.devoucher\nInteger Overflow occurs if:\n    accounts[appt].membership = 0\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:491:9: Warning: Integer Overflow.\n        Devouch(_proposer, _devouch)\nInteger Overflow occurs if:\n    accounts[appt].membership = 64\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:429:9: Warning: Integer Overflow.\n        candidate.membership\nInteger Overflow occurs if:\n    accounts[appt].membership = 64\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:461:24: Warning: Integer Overflow.\n        address appt = candidate.voucher\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:372:16: Warning: Integer Overflow.\n        return accounts[_voter].membership", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:408:16: Warning: Integer Overflow.\n        return accounts[_account].membership", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:479:13: Warning: Integer Overflow.\n        if (candidate.membership\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:421:13: Warning: Integer Overflow.\n            candidate.appointer\nInteger Overflow occurs if:\n    accounts[appt].membership = 0\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:401:16: Warning: Integer Overflow.\n        return accounts[_account].membership", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:394:16: Warning: Integer Overflow.\n        return accounts[_proposal].membership", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:449:9: Warning: Integer Overflow.\n        Denounced(_board, _reason)\nInteger Overflow occurs if:\n    accounts[dncr].membership = 64\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:458:13: Warning: Integer Overflow.\n        if (candidate.membership\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:470:9: Warning: Integer Overflow.\n        Vouch(_proposer, _vouch)\nInteger Overflow occurs if:\n    accounts[appt].membership = 64\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:387:16: Warning: Integer Overflow.\n        return accounts[_proposal].membership", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:471:9: Warning: Integer Overflow.\n        candidate.membership\nInteger Overflow occurs if:\n    accounts[appt].membership = 64\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:464:13: Warning: Integer Overflow.\n            Vouch(_proposer, _vouch)\nInteger Overflow occurs if:\n    accounts[appt].membership = 0\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:437:13: Warning: Integer Overflow.\n        if (board.membership\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:541:9: Warning: Integer Overflow.\n        account.membership", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:463:13: Warning: Integer Overflow.\n            candidate.voucher\nInteger Overflow occurs if:\n    accounts[appt].membership = 0\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:483:13: Warning: Integer Overflow.\n        if (accounts[appt].membership\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:316:9: Warning: Integer Overflow.\n        account.membership\nInteger Overflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:428:9: Warning: Integer Overflow.\n        Nominated(_board, _vouch)\nInteger Overflow occurs if:\n    accounts[appt].membership = 64\n    accounts[msg.sender].membership = 64"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:428:9: Warning: Integer Underflow.\n        Nominated(_board, _vouch)\nInteger Underflow occurs if:\n    accounts[appt].membership = 64\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:485:13: Warning: Integer Underflow.\n            Devouch(_proposer, _devouch)\nInteger Underflow occurs if:\n    accounts[appt].membership = 0\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:566:9: Warning: Integer Underflow.\n        BannedProposal(_proposal, _reason)\nInteger Underflow occurs if:\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:464:13: Warning: Integer Underflow.\n            Vouch(_proposer, _vouch)\nInteger Underflow occurs if:\n    accounts[appt].membership = 0\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:585:26: Warning: Integer Underflow.\n        uint256 grant = (now - lastAccess", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:598:26: Warning: Integer Underflow.\n        uint256 grant = (now - accounts[_account].lastAccess\nInteger Underflow occurs if:\n    accounts[_account].lastAccess = 1", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:443:13: Warning: Integer Underflow.\n            Denounced(_board, _reason)\nInteger Underflow occurs if:\n    accounts[dncr].membership = 0\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:449:9: Warning: Integer Underflow.\n        Denounced(_board, _reason)\nInteger Underflow occurs if:\n    accounts[dncr].membership = 64\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:422:13: Warning: Integer Underflow.\n            Nominated(_board, _vouch)\nInteger Underflow occurs if:\n    accounts[appt].membership = 0\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:470:9: Warning: Integer Underflow.\n        Vouch(_proposer, _vouch)\nInteger Underflow occurs if:\n    accounts[appt].membership = 64\n    accounts[msg.sender].membership = 64", 
+   "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:491:9: Warning: Integer Underflow.\n        Devouch(_proposer, _devouch)\nInteger Underflow occurs if:\n    accounts[appt].membership = 64\n    accounts[msg.sender].membership = 64"
+  ], 
+  "money_concurrency": [
+   [
+    "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:565:9: Warning: Transaction-Ordering Dependency.\n        burn.transfer(proposalCensorshipFee)"
+   ], 
+   [
+    "./0x000000002bb43c83ece652d161ad0fa862129a2c_ext.sol:342:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(registrationDeposit)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.4"
+}

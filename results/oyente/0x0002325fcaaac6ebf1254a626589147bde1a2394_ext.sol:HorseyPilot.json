@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x0002325fcaaac6ebf1254a626589147bde1a2394_ext.sol:1016:1: Warning: Integer Overflow.\ncontract HorseyPilot {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    currentProposal.proposer = 1461501637330902918203684832716283019655932542975\n    proposalInProgress = 0\n    jokerAddress = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./0x0002325fcaaac6ebf1254a626589147bde1a2394_ext.sol:1337:45: Warning: Integer Underflow.\n        require(((!proposalInProgress) || ((block.timestamp - currentProposal.timestamp\nInteger Underflow occurs if:\n    currentProposal.timestamp = 1\n    proposalInProgress = 255\n    jokerAddress = 0", 
+   "./0x0002325fcaaac6ebf1254a626589147bde1a2394_ext.sol:1344:55: Warning: Integer Underflow.\n        if(msg.sender == currentProposal.proposer && (block.timestamp - cooldownStart\nInteger Underflow occurs if:\n    cooldownStart = 1\n    currentProposal.proposer = 0\n    proposalInProgress = 0\n    jokerAddress = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./0x0002325fcaaac6ebf1254a626589147bde1a2394_ext.sol:1174:13: Warning: Transaction-Ordering Dependency.\n            destination.transfer(balance)"
+   ], 
+   [
+    "./0x0002325fcaaac6ebf1254a626589147bde1a2394_ext.sol:1174:13: Warning: Transaction-Ordering Dependency.\n            destination.transfer(balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "18.8"
+}

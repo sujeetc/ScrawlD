@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:705:12: Warning: Integer Overflow.\n    return _allTokens[index]\nInteger Overflow occurs if:\n    _allTokens.length = 105782898658114362639998236590588058411517566113314665475433552748888561006559", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:686:12: Warning: Integer Overflow.\n    return _ownedTokens[owner][index]\nInteger Overflow occurs if:\n    _ownedTokens[owner][index] = 105782898658114362639998236590588058411517566113314665475433552748888561006559\n    _ownedTokensCount[owner] = 105782898658114362639998236590588058411517566113314665475433552748888561006559", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:473:3: Warning: Integer Overflow.\n  function safeTransferFrom(\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:842:5: Warning: Integer Underflow.\n    return _tokenURIs[tokenId]\nInteger Underflow occurs if:\n    return _tokenURIs[tokenId] = 1\n    _tokenOwner[tokenId] = 1461501637330902918203684832716283019655932542975", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:836:5: Warning: Integer Underflow.\n    return _symbol\nInteger Underflow occurs if:\n    return _symbol = 1", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:831:5: Warning: Integer Underflow.\n    return _name\nInteger Underflow occurs if:\n    return _name = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "57.5"
+}

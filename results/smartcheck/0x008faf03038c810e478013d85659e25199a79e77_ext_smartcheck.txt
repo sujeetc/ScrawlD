@@ -1,0 +1,75 @@
+./0x008faf03038c810e478013d85659e25199a79e77_ext.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_ADDRESS_HARDCODED
+patternId: adc165
+severity: 1
+line: 41
+column: 41
+content: 0x2C9e6BDAA0EF0284eECef0e0Cc102dcDEaE4887e
+
+ruleId: SOLIDITY_ADDRESS_HARDCODED
+patternId: adc165
+severity: 1
+line: 42
+column: 34
+content: 0x39AA39c021dfbaE8faC545936693aC917d5E7563
+
+ruleId: SOLIDITY_DIV_MUL
+patternId: 09hhh1
+severity: 2
+line: 283
+column: 31
+content: 80000*(100000-((_winTickets*100000)/_totalTickets))
+
+ruleId: SOLIDITY_DIV_MUL
+patternId: 09hhh1
+severity: 2
+line: 288
+column: 11
+content: ((a+m-1)/m)*m
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 39
+column: 2
+content: uint256constantroundCutoff=1800;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 40
+column: 2
+content: uint256constantroundLength=3600;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 41
+column: 2
+content: addressconstantcompoundOracleProxy=0x2C9e6BDAA0EF0284eECef0e0Cc102dcDEaE4887e;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 42
+column: 2
+content: addressconstantcUSDCAddress=0x39AA39c021dfbaE8faC545936693aC917d5E7563;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 77
+column: 2
+content: mapping(uint256=>Round)roundList;
+
+SOLIDITY_VISIBILITY :5
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_ADDRESS_HARDCODED :2
+SOLIDITY_DIV_MUL :2

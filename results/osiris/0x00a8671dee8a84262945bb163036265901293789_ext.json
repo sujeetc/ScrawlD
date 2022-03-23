@@ -1,0 +1,115 @@
+{"COSTA_RICA_WINS-1":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "43.4179480076", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00a8671dee8a84262945bb163036265901293789_ext.sol:COSTA_RICA_WINS:24:3\nbalanceOf[to] += value\n^\n./0x00a8671dee8a84262945bb163036265901293789_ext.sol:COSTA_RICA_WINS:50:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"COSTA_RICA_WINS-2":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "39.6060431004", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00a8671dee8a84262945bb163036265901293789_ext.sol:COSTA_RICA_WINS:24:3\nbalanceOf[to] += value\n^\n./0x00a8671dee8a84262945bb163036265901293789_ext.sol:COSTA_RICA_WINS:50:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"COSTA_RICA_WINS-3":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "45.1120798588", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00a8671dee8a84262945bb163036265901293789_ext.sol:COSTA_RICA_WINS:24:3\nbalanceOf[to] += value\n^\n./0x00a8671dee8a84262945bb163036265901293789_ext.sol:COSTA_RICA_WINS:50:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"COSTA_RICA_WINS-4":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "41.4010150433", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00a8671dee8a84262945bb163036265901293789_ext.sol:COSTA_RICA_WINS:24:3\nbalanceOf[to] += value\n^\n./0x00a8671dee8a84262945bb163036265901293789_ext.sol:COSTA_RICA_WINS:50:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"COSTA_RICA_WINS-5":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "39.5357921124", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00a8671dee8a84262945bb163036265901293789_ext.sol:COSTA_RICA_WINS:24:3\nbalanceOf[to] += value\n^\n./0x00a8671dee8a84262945bb163036265901293789_ext.sol:COSTA_RICA_WINS:50:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"COSTA_RICA_WINS-6":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "44.1143558025", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00a8671dee8a84262945bb163036265901293789_ext.sol:COSTA_RICA_WINS:24:3\nbalanceOf[to] += value\n^\n./0x00a8671dee8a84262945bb163036265901293789_ext.sol:COSTA_RICA_WINS:50:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+}}

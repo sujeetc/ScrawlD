@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./0x00a9f7d093c46d95f0318e4a6ffc6ed68f73044c_ext.sol:263:5: Warning: Integer Underflow.\n    string public name = \"Ahoolee Token PreSale\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.5"
+}

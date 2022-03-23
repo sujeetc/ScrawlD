@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./0x009c80eff4f5d8fca2b961ee607b00b9c64ef9f2_ext.sol:76:5: Warning: Integer Underflow.\n    string public symbol = \"STORH\"", 
+   "./0x009c80eff4f5d8fca2b961ee607b00b9c64ef9f2_ext.sol:75:5: Warning: Integer Underflow.\n    string public name = \"Storh\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "44.3"
+}

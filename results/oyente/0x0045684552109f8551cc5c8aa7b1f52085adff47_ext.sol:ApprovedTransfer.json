@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./0x0045684552109f8551cc5c8aa7b1f52085adff47_ext.sol:515:31: Warning: Callstack Depth Attack Vulnerability.\n                    success = address(this).call(_data)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x0045684552109f8551cc5c8aa7b1f52085adff47_ext.sol:495:5: Warning: Integer Overflow.\n    function execute(\r\n    ^\nSpanning multiple lines.", 
+   "./0x0045684552109f8551cc5c8aa7b1f52085adff47_ext.sol:507:28: Warning: Integer Overflow.\n        bytes32 signHash = getSignHash(address(this), _wallet, 0, _data, _nonce, _gasPrice, _gasLimit)"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "24.9"
+}

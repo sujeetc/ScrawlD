@@ -1,0 +1,321 @@
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ZarixCoin
+Function name: setSymbol(string)
+PC address: 1192
+Estimated Gas Usage: 13001 - 56484
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: ./0x001f52daa8a4f7b9b26da16baf449c0d270dbe63_ext.sol:379
+
+     returns(uint)
+    {
+        return this.balance;
+    }
+
+    /**
+     * Retrieve the total token supply.
+     */
+   
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x104040002080044, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x8, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: ZarixCoinActivate(), txdata: 0xaa27e8d2, value: 0x0
+Caller: [ATTACKER], function: setSymbol(string), txdata: 0xb84c8246ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdc, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ZarixCoin
+Function name: setSymbol(string)
+PC address: 1203
+Estimated Gas Usage: 12980 - 56370
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: ./0x001f52daa8a4f7b9b26da16baf449c0d270dbe63_ext.sol:379
+
+     returns(uint)
+    {
+        return this.balance;
+    }
+
+    /**
+     * Retrieve the total token supply.
+     */
+   
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: ZarixCoinActivate(), txdata: 0xaa27e8d2, value: 0x0
+Caller: [ATTACKER], function: setSymbol(string), txdata: 0xb84c824680, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ZarixCoin
+Function name: setSymbol(string)
+PC address: 1215
+Estimated Gas Usage: 12980 - 56370
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: ./0x001f52daa8a4f7b9b26da16baf449c0d270dbe63_ext.sol:379
+
+     returns(uint)
+    {
+        return this.balance;
+    }
+
+    /**
+     * Retrieve the total token supply.
+     */
+   
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x180000002003022, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: ZarixCoinActivate(), txdata: 0xaa27e8d2, value: 0x0
+Caller: [ATTACKER], function: setSymbol(string), txdata: 0xb84c824680, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ZarixCoin
+Function name: setName(string)
+PC address: 1292
+Estimated Gas Usage: 13045 - 56528
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: ./0x001f52daa8a4f7b9b26da16baf449c0d270dbe63_ext.sol:373
+
+  * Method to view the current Ethereum stored in the contract
+     * Example: totalEthereumBalance()
+     */
+  
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x50400000a0508, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x4, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: ZarixCoinActivate(), txdata: 0xaa27e8d2, value: 0x0
+Caller: [ATTACKER], function: setName(string), txdata: 0xc47f0027ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdc, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ZarixCoin
+Function name: setName(string)
+PC address: 1303
+Estimated Gas Usage: 13024 - 56414
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: ./0x001f52daa8a4f7b9b26da16baf449c0d270dbe63_ext.sol:373
+
+  * Method to view the current Ethereum stored in the contract
+     * Example: totalEthereumBalance()
+     */
+  
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: ZarixCoinActivate(), txdata: 0xaa27e8d2, value: 0x0
+Caller: [ATTACKER], function: setName(string), txdata: 0xc47f002780, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ZarixCoin
+Function name: setName(string)
+PC address: 1315
+Estimated Gas Usage: 13024 - 56414
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: ./0x001f52daa8a4f7b9b26da16baf449c0d270dbe63_ext.sol:373
+
+  * Method to view the current Ethereum stored in the contract
+     * Example: totalEthereumBalance()
+     */
+  
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: ZarixCoinActivate(), txdata: 0xaa27e8d2, value: 0x0
+Caller: [CREATOR], function: setName(string), txdata: 0xc47f002780, value: 0x0
+
+==== Exception State ====
+SWC ID: 110
+Severity: Medium
+Contract: ZarixCoin
+Function name: usersAddresses(uint256)
+PC address: 4058
+Estimated Gas Usage: 1239 - 1334
+An assertion violation was triggered.
+It is possible to trigger an assertion violation. Note that Solidity assert() statements should only be used to check invariants. Review the transaction trace generated for this issue and either make sure your program logic is correct, or use require() instead of assert() if your goal is to constrain user inputs or enforce preconditions. Remember to validate inputs from both callers (for instance, via passed arguments) and callees (for instance, via return values).
+--------------------
+In file: ./0x001f52daa8a4f7b9b26da16baf449c0d270dbe63_ext.sol:143
+
+=========*/
+    // amount of sh
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x80000040000000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: usersAddresses(uint256), txdata: 0x73338081, value: 0x0
+
+==== Exception State ====
+SWC ID: 110
+Severity: Medium
+Contract: ZarixCoin
+Function name: calculateTokensReceived(uint256)
+PC address: 6028
+Estimated Gas Usage: 297 - 392
+An assertion violation was triggered.
+It is possible to trigger an assertion violation. Note that Solidity assert() statements should only be used to check invariants. Review the transaction trace generated for this issue and either make sure your program logic is correct, or use require() instead of assert() if your goal is to constrain user inputs or enforce preconditions. Remember to validate inputs from both callers (for instance, via passed arguments) and callees (for instance, via return values).
+--------------------
+In file: ./0x001f52daa8a4f7b9b26da16baf449c0d270dbe63_ext.sol:728
+
+n overflow.
+    */
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2200000420014122, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: calculateTokensReceived(uint256), txdata: 0x10d0ffdd49, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ZarixCoin
+Function name: calculateEthereumReceived(uint256)
+PC address: 6288
+Estimated Gas Usage: 2460 - 3166
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: ./0x001f52daa8a4f7b9b26da16baf449c0d270dbe63_ext.sol:702
+
+     return 0;
+   
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1000000002040, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: calculateEthereumReceived(uint256), txdata: 0x22609373, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: Low
+Contract: ZarixCoin
+Function name: setName(string)
+PC address: 6487
+Estimated Gas Usage: 13024 - 56414
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation.  This issue is reported for internal compiler generated code.
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x4000000000002, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: ZarixCoinActivate(), txdata: 0xaa27e8d2, value: 0x0
+Caller: [SOMEGUY], function: setName(string), txdata: 0xc47f002780, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: Low
+Contract: ZarixCoin
+Function name: setName(string)
+PC address: 6501
+Estimated Gas Usage: 13024 - 56414
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation.  This issue is reported for internal compiler generated code.
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1000000003432, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: ZarixCoinActivate(), txdata: 0xaa27e8d2, value: 0x0
+Caller: [ATTACKER], function: setName(string), txdata: 0xc47f002780, value: 0x0
+
+

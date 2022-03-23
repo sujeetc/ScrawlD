@@ -1,0 +1,115 @@
+{"SOCGEN_301201-1":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "38.0823531151", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x0022ee765799c1f836a36612b8c62be098fd0bbb_ext.sol:SOCGEN_301201:24:3\nbalanceOf[to] += value\n^\n./0x0022ee765799c1f836a36612b8c62be098fd0bbb_ext.sol:SOCGEN_301201:50:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"SOCGEN_301201-2":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "40.4063830376", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x0022ee765799c1f836a36612b8c62be098fd0bbb_ext.sol:SOCGEN_301201:24:3\nbalanceOf[to] += value\n^\n./0x0022ee765799c1f836a36612b8c62be098fd0bbb_ext.sol:SOCGEN_301201:50:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"SOCGEN_301201-3":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "45.1773951054", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x0022ee765799c1f836a36612b8c62be098fd0bbb_ext.sol:SOCGEN_301201:24:3\nbalanceOf[to] += value\n^\n./0x0022ee765799c1f836a36612b8c62be098fd0bbb_ext.sol:SOCGEN_301201:50:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"SOCGEN_301201-4":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "43.0765111446", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x0022ee765799c1f836a36612b8c62be098fd0bbb_ext.sol:SOCGEN_301201:24:3\nbalanceOf[to] += value\n^\n./0x0022ee765799c1f836a36612b8c62be098fd0bbb_ext.sol:SOCGEN_301201:50:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"SOCGEN_301201-5":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "38.2055211067", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x0022ee765799c1f836a36612b8c62be098fd0bbb_ext.sol:SOCGEN_301201:24:3\nbalanceOf[to] += value\n^\n./0x0022ee765799c1f836a36612b8c62be098fd0bbb_ext.sol:SOCGEN_301201:50:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"SOCGEN_301201-6":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "40.9682190418", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x0022ee765799c1f836a36612b8c62be098fd0bbb_ext.sol:SOCGEN_301201:24:3\nbalanceOf[to] += value\n^\n./0x0022ee765799c1f836a36612b8c62be098fd0bbb_ext.sol:SOCGEN_301201:50:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+}}

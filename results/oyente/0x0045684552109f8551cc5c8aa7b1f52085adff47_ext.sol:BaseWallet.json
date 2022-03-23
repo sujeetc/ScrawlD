@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./0x0045684552109f8551cc5c8aa7b1f52085adff47_ext.sol:201:17: Warning: Re-Entrancy Vulnerability.\n        require(_target.call.value(_value)(_data)"
+  ], 
+  "integer_overflow": [
+   "./0x0045684552109f8551cc5c8aa7b1f52085adff47_ext.sol:202:14: Warning: Integer Overflow.\n        emit Invoked(msg.sender, _target, _value, _data)\nInteger Overflow occurs if:\n    _value = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    authorised[msg.sender] = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./0x0045684552109f8551cc5c8aa7b1f52085adff47_ext.sol:202:14: Warning: Integer Underflow.\n        emit Invoked(msg.sender, _target, _value, _data)\nInteger Underflow occurs if:\n    _value = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    authorised[msg.sender] = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.5"
+}

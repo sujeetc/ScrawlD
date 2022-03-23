@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:705:12: Warning: Integer Overflow.\n    return _allTokens[index]\nInteger Overflow occurs if:\n    _allTokens.length = 105782898658114362639998236590588058411517566113314665475433552748888561006559", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:1615:5: Warning: Integer Overflow.\n    function safeTransferFrom(address from, address to, uint256 tokenId, bytes _data) public {\r\n    ^\nSpanning multiple lines.", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:1515:5: Warning: Integer Overflow.\n    function queryMap(uint8 zoom, int256[] lat_rows, int256[] lng_columns) public view returns(string _outStr) {\r\n    ^\nSpanning multiple lines.", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:1649:41: Warning: Integer Overflow.\n        plotDetail memory _plotDetail = plotDetails[tokenIDplotdetailsIndexId[tokenId]]\nInteger Overflow occurs if:\n    tokenIDplotdetailsIndexId[tokenId] = 19298681539552699258185503286070253854997628854965648752103403391503744456022\n    plotDetails[tokenIDplotdetailsIndexId[tokenId]] = 19298681539552699258185503286070253854997628854965648752103403391503744456023\n    to = 1461501637330902918203684832716283019655932542975\n    _tokenOwner[tokenId] = 1461501637330902918203684832716283019655932542975", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:1551:5: Warning: Integer Overflow.\n    function queryPlotExists(uint8 zoom, int256[] lat_rows, int256[] lng_columns) public view returns(bool) {\r\n    ^\nSpanning multiple lines.", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:1007:13: Warning: Integer Overflow.\n            all_playerObjects[allPlyersIdx].lastAccess\nInteger Overflow occurs if:\n    playerAddressToPlayerObjectID[msg.sender] = 1\n    all_playerObjects[allPlyersIdx] = 2", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:686:12: Warning: Integer Overflow.\n    return _ownedTokens[owner][index]\nInteger Overflow occurs if:\n    _ownedTokens[owner][index] = 105782898658114362639998236590588058411517566113314665475433552748888561006559\n    _ownedTokensCount[owner] = 105782898658114362639998236590588058411517566113314665475433552748888561006559", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:1007:13: Warning: Integer Overflow.\n            all_playerObjects[allPlyersIdx]\nInteger Overflow occurs if:\n    playerAddressToPlayerObjectID[msg.sender] = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    all_playerObjects[allPlyersIdx] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:1179:5: Warning: Integer Overflow.\n    function buyLandWithTokens(bytes32 _name, int256[] _plots_lat, int256[] _plots_lng)\r\n    ^\nSpanning multiple lines.", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:1099:5: Warning: Integer Overflow.\n    player[] public all_playerObjects"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:842:5: Warning: Integer Underflow.\n    return _tokenURIs[tokenId]\nInteger Underflow occurs if:\n    return _tokenURIs[tokenId] = 1\n    _tokenOwner[tokenId] = 1461501637330902918203684832716283019655932542975", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:836:5: Warning: Integer Underflow.\n    return _symbol\nInteger Underflow occurs if:\n    return _symbol = 1", 
+   "./0x003ad9c18bc279f40632e7e5de2fd213931215d0_ext.sol:831:5: Warning: Integer Underflow.\n    return _name\nInteger Underflow occurs if:\n    return _name = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "23.1"
+}

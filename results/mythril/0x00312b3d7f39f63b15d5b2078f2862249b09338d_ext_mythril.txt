@@ -1,0 +1,133 @@
+==== Exception State ====
+SWC ID: 110
+Severity: Medium
+Contract: BasicToken
+Function name: transfer(address,uint256)
+PC address: 471
+Estimated Gas Usage: 1199 - 2474
+An assertion violation was triggered.
+It is possible to trigger an assertion violation. Note that Solidity assert() statements should only be used to check invariants. Review the transaction trace generated for this issue and either make sure your program logic is correct, or use require() instead of assert() if your goal is to constrain user inputs or enforce preconditions. Remember to validate inputs from both callers (for instance, via passed arguments) and callees (for instance, via return values).
+--------------------
+In file: ./0x00312b3d7f39f63b15d5b2078f2862249b09338d_ext.sol:83
+
+ternal constan
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x20, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer(address,uint256), txdata: 0xa9059cbb000000000000000000000000010101010101010101010101010101010101010101, value: 0x0
+
+==== Exception State ====
+SWC ID: 110
+Severity: Medium
+Contract: StandardToken
+Function name: transfer(address,uint256)
+PC address: 1568
+Estimated Gas Usage: 1265 - 2540
+An assertion violation was triggered.
+It is possible to trigger an assertion violation. Note that Solidity assert() statements should only be used to check invariants. Review the transaction trace generated for this issue and either make sure your program logic is correct, or use require() instead of assert() if your goal is to constrain user inputs or enforce preconditions. Remember to validate inputs from both callers (for instance, via passed arguments) and callees (for instance, via return values).
+--------------------
+In file: ./0x00312b3d7f39f63b15d5b2078f2862249b09338d_ext.sol:83
+
+ternal constan
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x10, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer(address,uint256), txdata: 0xa9059cbb000000000000000000000000010101010101010101010101010101010101010101, value: 0x0
+
+==== Exception State ====
+SWC ID: 110
+Severity: Medium
+Contract: StandardToken
+Function name: increaseApproval(address,uint256)
+PC address: 1589
+Estimated Gas Usage: 1329 - 2464
+An assertion violation was triggered.
+It is possible to trigger an assertion violation. Note that Solidity assert() statements should only be used to check invariants. Review the transaction trace generated for this issue and either make sure your program logic is correct, or use require() instead of assert() if your goal is to constrain user inputs or enforce preconditions. Remember to validate inputs from both callers (for instance, via passed arguments) and callees (for instance, via return values).
+--------------------
+In file: ./0x00312b3d7f39f63b15d5b2078f2862249b09338d_ext.sol:93
+
+n of StandardT
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x505a002c000000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2000001808800401, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: approve(address,uint256), txdata: 0x095ea7b3000000000000000000000000004000000400000000000000000000082010208071, value: 0x0
+Caller: [CREATOR], function: increaseApproval(address,uint256), txdata: 0xd73dd623000000000000000000000000004000000400000000000000000000082010208091, value: 0x0
+
+==== Exception State ====
+SWC ID: 110
+Severity: Medium
+Contract: APToken
+Function name: transferFrom(address,address,uint256)
+PC address: 2868
+Estimated Gas Usage: 3158 - 5803
+An assertion violation was triggered.
+It is possible to trigger an assertion violation. Note that Solidity assert() statements should only be used to check invariants. Review the transaction trace generated for this issue and either make sure your program logic is correct, or use require() instead of assert() if your goal is to constrain user inputs or enforce preconditions. Remember to validate inputs from both callers (for instance, via passed arguments) and callees (for instance, via return values).
+--------------------
+In file: ./0x00312b3d7f39f63b15d5b2078f2862249b09338d_ext.sol:83
+
+ternal constan
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transferFrom(address,address,uint256), txdata: 0x23b872dd0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010201010101010101010101010101010101010101, value: 0x0
+
+==== Exception State ====
+SWC ID: 110
+Severity: Medium
+Contract: APToken
+Function name: increaseApproval(address,uint256)
+PC address: 2889
+Estimated Gas Usage: 2382 - 3847
+An assertion violation was triggered.
+It is possible to trigger an assertion violation. Note that Solidity assert() statements should only be used to check invariants. Review the transaction trace generated for this issue and either make sure your program logic is correct, or use require() instead of assert() if your goal is to constrain user inputs or enforce preconditions. Remember to validate inputs from both callers (for instance, via passed arguments) and callees (for instance, via return values).
+--------------------
+In file: ./0x00312b3d7f39f63b15d5b2078f2862249b09338d_ext.sol:93
+
+n of StandardT
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x800000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: approve(address,uint256), txdata: 0x095ea7b3000000000000000000000000000000000000000000000000000000000000000080, value: 0x0
+Caller: [ATTACKER], function: increaseApproval(address,uint256), txdata: 0xd73dd6230000000000000000000000000000000000000000000000000000000000000000d8, value: 0x0
+
+

@@ -1,0 +1,1216 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "allowance",
+            "source_mapping": {
+              "start": 3420,
+              "length": 46
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transferFrom",
+                "source_mapping": {
+                  "start": 3074,
+                  "length": 701
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABStandardToken",
+                    "source_mapping": {
+                      "start": 2349,
+                      "length": 2037
+                    }
+                  },
+                  "signature": "transferFrom(address,address,uint256)"
+                }
+              }
+            }
+          },
+          {
+            "type": "function",
+            "name": "allowance",
+            "source_mapping": {
+              "start": 4127,
+              "length": 146
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABStandardToken",
+                "source_mapping": {
+                  "start": 2349,
+                  "length": 2037
+                }
+              },
+              "signature": "allowance(address,address)"
+            }
+          },
+          {
+            "type": "function",
+            "name": "allowance",
+            "source_mapping": {
+              "start": 2075,
+              "length": 97
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABTokenBase",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 2318
+                }
+              },
+              "signature": "allowance(address,address)"
+            }
+          }
+        ],
+        "description": "ABStandardToken.transferFrom(address,address,uint256).allowance () shadows:\n\t- ABStandardToken.allowance(address,address) () (function)\n\t- ABTokenBase.allowance(address,address) () (function)\n",
+        "markdown": "[ABStandardToken.transferFrom(address,address,uint256).allowance]() shadows:\n\t- [ABStandardToken.allowance(address,address)]() (function)\n\t- [ABTokenBase.allowance(address,address)]() (function)\n",
+        "first_markdown_element": "",
+        "id": "e577cf6e523d1fc1bc1894c9d94bbd3d22c54f2b6aa307a7b29d157677f9b977",
+        "check": "shadowing-local",
+        "impact": "Low",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "pragma",
+            "name": "^0.4.8",
+            "source_mapping": {
+              "start": 0,
+              "length": 23
+            },
+            "type_specific_fields": {
+              "directive": [
+                "solidity",
+                "^",
+                "0.4",
+                ".8"
+              ]
+            }
+          }
+        ],
+        "description": "Pragma version^0.4.8 () allows old versions\n",
+        "markdown": "Pragma version[^0.4.8]() allows old versions\n",
+        "first_markdown_element": "",
+        "id": "dd43bca9b08bc1fa7b94a3e619671f3c2c98a72b8b3bf0caf1e1f86665ec4569",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [],
+        "description": "solc-0.4.10 is not recommended for deployment\n",
+        "markdown": "solc-0.4.10 is not recommended for deployment\n",
+        "first_markdown_element": "",
+        "id": "0eb2863571dc5faae5942bcb279abacd3e70424aa95146384321c9743a3cf58c",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "approveAndCall",
+            "source_mapping": {
+              "start": 5638,
+              "length": 805
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABToken",
+                "source_mapping": {
+                  "start": 4390,
+                  "length": 2056
+                }
+              },
+              "signature": "approveAndCall(address,uint256,bytes)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "require(bool)(_spender.call(bytes4(bytes32(keccak256()(receiveApproval(address,uint256,address,bytes)))),msg.sender,_value,this,_extraData))",
+            "source_mapping": {
+              "start": 6275,
+              "length": 138
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "approveAndCall",
+                "source_mapping": {
+                  "start": 5638,
+                  "length": 805
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABToken",
+                    "source_mapping": {
+                      "start": 4390,
+                      "length": 2056
+                    }
+                  },
+                  "signature": "approveAndCall(address,uint256,bytes)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Low level call in ABToken.approveAndCall(address,uint256,bytes) ():\n\t- require(bool)(_spender.call(bytes4(bytes32(keccak256()(receiveApproval(address,uint256,address,bytes)))),msg.sender,_value,this,_extraData)) ()\n",
+        "markdown": "Low level call in [ABToken.approveAndCall(address,uint256,bytes)]():\n\t- [require(bool)(_spender.call(bytes4(bytes32(keccak256()(receiveApproval(address,uint256,address,bytes)))),msg.sender,_value,this,_extraData))]()\n",
+        "first_markdown_element": "",
+        "id": "e6f60e3ebc756f419d364716ca60319834ae55fbd842f832b9b00033c8c2649a",
+        "check": "low-level-calls",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_to",
+            "source_mapping": {
+              "start": 2466,
+              "length": 11
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 2448,
+                  "length": 618
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABStandardToken",
+                    "source_mapping": {
+                      "start": 2349,
+                      "length": 2037
+                    }
+                  },
+                  "signature": "transfer(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter ABStandardToken.transfer(address,uint256)._to () is not in mixedCase\n",
+        "markdown": "Parameter [ABStandardToken.transfer(address,uint256)._to]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "048b9291abbc24b9548e132df049768fcd63ec5172f4d392418062e6e9463bb7",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_value",
+            "source_mapping": {
+              "start": 2479,
+              "length": 14
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 2448,
+                  "length": 618
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABStandardToken",
+                    "source_mapping": {
+                      "start": 2349,
+                      "length": 2037
+                    }
+                  },
+                  "signature": "transfer(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter ABStandardToken.transfer(address,uint256)._value () is not in mixedCase\n",
+        "markdown": "Parameter [ABStandardToken.transfer(address,uint256)._value]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "cf9d8e426bd1477252379a24868009ca9439805a9ba227e82e7b6afce1f110a5",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_from",
+            "source_mapping": {
+              "start": 3096,
+              "length": 13
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transferFrom",
+                "source_mapping": {
+                  "start": 3074,
+                  "length": 701
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABStandardToken",
+                    "source_mapping": {
+                      "start": 2349,
+                      "length": 2037
+                    }
+                  },
+                  "signature": "transferFrom(address,address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter ABStandardToken.transferFrom(address,address,uint256)._from () is not in mixedCase\n",
+        "markdown": "Parameter [ABStandardToken.transferFrom(address,address,uint256)._from]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "8d68ad3da9ea06161e2afaca55b0a1c66a0139fd77d23c5960076468d98d74d2",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_to",
+            "source_mapping": {
+              "start": 3111,
+              "length": 11
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transferFrom",
+                "source_mapping": {
+                  "start": 3074,
+                  "length": 701
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABStandardToken",
+                    "source_mapping": {
+                      "start": 2349,
+                      "length": 2037
+                    }
+                  },
+                  "signature": "transferFrom(address,address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter ABStandardToken.transferFrom(address,address,uint256)._to () is not in mixedCase\n",
+        "markdown": "Parameter [ABStandardToken.transferFrom(address,address,uint256)._to]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "7daac238c30e860ed86750562b20fd5c5e166933a91b70fee90d0816350c6025",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_value",
+            "source_mapping": {
+              "start": 3124,
+              "length": 14
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transferFrom",
+                "source_mapping": {
+                  "start": 3074,
+                  "length": 701
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABStandardToken",
+                    "source_mapping": {
+                      "start": 2349,
+                      "length": 2037
+                    }
+                  },
+                  "signature": "transferFrom(address,address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter ABStandardToken.transferFrom(address,address,uint256)._value () is not in mixedCase\n",
+        "markdown": "Parameter [ABStandardToken.transferFrom(address,address,uint256)._value]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "80e12f258e888bcc9da037d4eb6b8a17bdb8c5feb8552cc48f3b905b28e53879",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_owner",
+            "source_mapping": {
+              "start": 3802,
+              "length": 14
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "balanceOf",
+                "source_mapping": {
+                  "start": 3783,
+                  "length": 119
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABStandardToken",
+                    "source_mapping": {
+                      "start": 2349,
+                      "length": 2037
+                    }
+                  },
+                  "signature": "balanceOf(address)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter ABStandardToken.balanceOf(address)._owner () is not in mixedCase\n",
+        "markdown": "Parameter [ABStandardToken.balanceOf(address)._owner]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "9ec0db4379dfb41a790311361a78c4533c4c733b50717b5631cbb006bf76ca83",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_spender",
+            "source_mapping": {
+              "start": 3927,
+              "length": 16
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "approve",
+                "source_mapping": {
+                  "start": 3910,
+                  "length": 209
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABStandardToken",
+                    "source_mapping": {
+                      "start": 2349,
+                      "length": 2037
+                    }
+                  },
+                  "signature": "approve(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter ABStandardToken.approve(address,uint256)._spender () is not in mixedCase\n",
+        "markdown": "Parameter [ABStandardToken.approve(address,uint256)._spender]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "202a4716c17731b944d1d48a32fd0bd928c66ce5ed9a22fd08a5eca7a26aa8f9",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_value",
+            "source_mapping": {
+              "start": 3945,
+              "length": 14
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "approve",
+                "source_mapping": {
+                  "start": 3910,
+                  "length": 209
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABStandardToken",
+                    "source_mapping": {
+                      "start": 2349,
+                      "length": 2037
+                    }
+                  },
+                  "signature": "approve(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter ABStandardToken.approve(address,uint256)._value () is not in mixedCase\n",
+        "markdown": "Parameter [ABStandardToken.approve(address,uint256)._value]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "6cbd3a605c42f3f9f3bbf27d922d21c663ab76e7a1641ad7f04cad439e0e3d86",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_owner",
+            "source_mapping": {
+              "start": 4146,
+              "length": 14
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "allowance",
+                "source_mapping": {
+                  "start": 4127,
+                  "length": 146
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABStandardToken",
+                    "source_mapping": {
+                      "start": 2349,
+                      "length": 2037
+                    }
+                  },
+                  "signature": "allowance(address,address)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter ABStandardToken.allowance(address,address)._owner () is not in mixedCase\n",
+        "markdown": "Parameter [ABStandardToken.allowance(address,address)._owner]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "58034387a528ea2b45caef51b28a405ffdf87f1ad753d740141e7708820e3ab6",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_spender",
+            "source_mapping": {
+              "start": 4162,
+              "length": 16
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "allowance",
+                "source_mapping": {
+                  "start": 4127,
+                  "length": 146
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABStandardToken",
+                    "source_mapping": {
+                      "start": 2349,
+                      "length": 2037
+                    }
+                  },
+                  "signature": "allowance(address,address)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter ABStandardToken.allowance(address,address)._spender () is not in mixedCase\n",
+        "markdown": "Parameter [ABStandardToken.allowance(address,address)._spender]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "dfd214ae94c1da07dcf08822b3ab9df3941b8ed72956d7fdf71b560dcb83560f",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "MAX_UINT256",
+            "source_mapping": {
+              "start": 2398,
+              "length": 41
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABStandardToken",
+                "source_mapping": {
+                  "start": 2349,
+                  "length": 2037
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "variable",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Variable ABStandardToken.MAX_UINT256 () is not in mixedCase\n",
+        "markdown": "Variable [ABStandardToken.MAX_UINT256]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "767dd3fa7c6b9f48e1a6c130e589a4154db45121aaa9a3301ed115184ab9ecdf",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_spender",
+            "source_mapping": {
+              "start": 5662,
+              "length": 16
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "approveAndCall",
+                "source_mapping": {
+                  "start": 5638,
+                  "length": 805
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABToken",
+                    "source_mapping": {
+                      "start": 4390,
+                      "length": 2056
+                    }
+                  },
+                  "signature": "approveAndCall(address,uint256,bytes)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter ABToken.approveAndCall(address,uint256,bytes)._spender () is not in mixedCase\n",
+        "markdown": "Parameter [ABToken.approveAndCall(address,uint256,bytes)._spender]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "b801de746868fcb29ba026d3dd7638a16dd9a5e419d8dab990d0fd09b6a39586",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_value",
+            "source_mapping": {
+              "start": 5680,
+              "length": 14
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "approveAndCall",
+                "source_mapping": {
+                  "start": 5638,
+                  "length": 805
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABToken",
+                    "source_mapping": {
+                      "start": 4390,
+                      "length": 2056
+                    }
+                  },
+                  "signature": "approveAndCall(address,uint256,bytes)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter ABToken.approveAndCall(address,uint256,bytes)._value () is not in mixedCase\n",
+        "markdown": "Parameter [ABToken.approveAndCall(address,uint256,bytes)._value]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "863ae03aef6f9a7472a31d000ed0f4335d03a5260369779bc2d36144e13bebd3",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_extraData",
+            "source_mapping": {
+              "start": 5696,
+              "length": 16
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "approveAndCall",
+                "source_mapping": {
+                  "start": 5638,
+                  "length": 805
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABToken",
+                    "source_mapping": {
+                      "start": 4390,
+                      "length": 2056
+                    }
+                  },
+                  "signature": "approveAndCall(address,uint256,bytes)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter ABToken.approveAndCall(address,uint256,bytes)._extraData () is not in mixedCase\n",
+        "markdown": "Parameter [ABToken.approveAndCall(address,uint256,bytes)._extraData]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "9b1e4fc7f4b2cf0361562a995dba84704d33119ee96213acecd0ca6483fa3a87",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "ABToken",
+            "source_mapping": {
+              "start": 5216,
+              "length": 356
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABToken",
+                "source_mapping": {
+                  "start": 4390,
+                  "length": 2056
+                }
+              },
+              "signature": "ABToken()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "totalSupply = 990000000",
+            "source_mapping": {
+              "start": 5253,
+              "length": 23
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "ABToken",
+                "source_mapping": {
+                  "start": 5216,
+                  "length": 356
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ABToken",
+                    "source_mapping": {
+                      "start": 4390,
+                      "length": 2056
+                    }
+                  },
+                  "signature": "ABToken()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "ABToken.ABToken() () uses literals with too many digits:\n\t- totalSupply = 990000000 ()\n",
+        "markdown": "[ABToken.ABToken()]() uses literals with too many digits:\n\t- [totalSupply = 990000000]()\n",
+        "first_markdown_element": "",
+        "id": "eaa12652305054c7e36b8c293cc34e8dfa47b9ca1d3051e1dabf207dd42ea1d6",
+        "check": "too-many-digits",
+        "impact": "Informational",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "version",
+            "source_mapping": {
+              "start": 5105,
+              "length": 32
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABToken",
+                "source_mapping": {
+                  "start": 4390,
+                  "length": 2056
+                }
+              }
+            }
+          },
+          {
+            "type": "contract",
+            "name": "ABToken",
+            "source_mapping": {
+              "start": 4390,
+              "length": 2056
+            }
+          }
+        ],
+        "description": "ABToken.version () is never used in ABToken ()\n",
+        "markdown": "[ABToken.version]() is never used in [ABToken]()\n",
+        "first_markdown_element": "",
+        "id": "664b70e4791ebeb2cdc09266d8fb138f24077a9b1e00818eea24c1f75c0bde6f",
+        "check": "unused-state",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "MAX_UINT256",
+            "source_mapping": {
+              "start": 2398,
+              "length": 41
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABStandardToken",
+                "source_mapping": {
+                  "start": 2349,
+                  "length": 2037
+                }
+              }
+            }
+          }
+        ],
+        "description": "ABStandardToken.MAX_UINT256 () should be constant\n",
+        "markdown": "[ABStandardToken.MAX_UINT256]() should be constant\n",
+        "first_markdown_element": "",
+        "id": "d1a4908c5e5ef3b6528383ee6283f495d6d0de60c281502fc1a501121a62efe4",
+        "check": "constable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "version",
+            "source_mapping": {
+              "start": 5105,
+              "length": 32
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABToken",
+                "source_mapping": {
+                  "start": 4390,
+                  "length": 2056
+                }
+              }
+            }
+          }
+        ],
+        "description": "ABToken.version () should be constant\n",
+        "markdown": "[ABToken.version]() should be constant\n",
+        "first_markdown_element": "",
+        "id": "7cc2e2695c4fc92080052bb96ce6a77a492c2500d79e6cb3a8bd7883c1938180",
+        "check": "constable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "balanceOf",
+            "source_mapping": {
+              "start": 3783,
+              "length": 119
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABStandardToken",
+                "source_mapping": {
+                  "start": 2349,
+                  "length": 2037
+                }
+              },
+              "signature": "balanceOf(address)"
+            }
+          },
+          {
+            "type": "function",
+            "name": "balanceOf",
+            "source_mapping": {
+              "start": 666,
+              "length": 77
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABTokenBase",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 2318
+                }
+              },
+              "signature": "balanceOf(address)"
+            }
+          }
+        ],
+        "description": "balanceOf(address) should be declared external:\n\t- ABStandardToken.balanceOf(address) ()\n\t- ABTokenBase.balanceOf(address) ()\n",
+        "markdown": "balanceOf(address) should be declared external:\n\t- [ABStandardToken.balanceOf(address)]()\n\t- [ABTokenBase.balanceOf(address)]()\n",
+        "first_markdown_element": "",
+        "id": "a4fa8c842b580edf1e6f53ab80cffae228f3574dcd6b8c80751893f84edd733c",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 2448,
+              "length": 618
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABStandardToken",
+                "source_mapping": {
+                  "start": 2349,
+                  "length": 2037
+                }
+              },
+              "signature": "transfer(address,uint256)"
+            }
+          },
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 985,
+              "length": 77
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABTokenBase",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 2318
+                }
+              },
+              "signature": "transfer(address,uint256)"
+            }
+          }
+        ],
+        "description": "transfer(address,uint256) should be declared external:\n\t- ABStandardToken.transfer(address,uint256) ()\n\t- ABTokenBase.transfer(address,uint256) ()\n",
+        "markdown": "transfer(address,uint256) should be declared external:\n\t- [ABStandardToken.transfer(address,uint256)]()\n\t- [ABTokenBase.transfer(address,uint256)]()\n",
+        "first_markdown_element": "",
+        "id": "ae3448039973c753cfea940828f923a28bb330a6631ab04708fdb6dee87fd0e1",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transferFrom",
+            "source_mapping": {
+              "start": 3074,
+              "length": 701
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABStandardToken",
+                "source_mapping": {
+                  "start": 2349,
+                  "length": 2037
+                }
+              },
+              "signature": "transferFrom(address,address,uint256)"
+            }
+          },
+          {
+            "type": "function",
+            "name": "transferFrom",
+            "source_mapping": {
+              "start": 1390,
+              "length": 96
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABTokenBase",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 2318
+                }
+              },
+              "signature": "transferFrom(address,address,uint256)"
+            }
+          }
+        ],
+        "description": "transferFrom(address,address,uint256) should be declared external:\n\t- ABStandardToken.transferFrom(address,address,uint256) ()\n\t- ABTokenBase.transferFrom(address,address,uint256) ()\n",
+        "markdown": "transferFrom(address,address,uint256) should be declared external:\n\t- [ABStandardToken.transferFrom(address,address,uint256)]()\n\t- [ABTokenBase.transferFrom(address,address,uint256)]()\n",
+        "first_markdown_element": "",
+        "id": "d2b457d5baa94a9db95727a66ebf403d034f78327ace40e581fb6106d2b63c41",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "approve",
+            "source_mapping": {
+              "start": 3910,
+              "length": 209
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABStandardToken",
+                "source_mapping": {
+                  "start": 2349,
+                  "length": 2037
+                }
+              },
+              "signature": "approve(address,uint256)"
+            }
+          },
+          {
+            "type": "function",
+            "name": "approve",
+            "source_mapping": {
+              "start": 1781,
+              "length": 81
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABTokenBase",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 2318
+                }
+              },
+              "signature": "approve(address,uint256)"
+            }
+          }
+        ],
+        "description": "approve(address,uint256) should be declared external:\n\t- ABStandardToken.approve(address,uint256) ()\n\t- ABTokenBase.approve(address,uint256) ()\n",
+        "markdown": "approve(address,uint256) should be declared external:\n\t- [ABStandardToken.approve(address,uint256)]()\n\t- [ABTokenBase.approve(address,uint256)]()\n",
+        "first_markdown_element": "",
+        "id": "41de349e2fbd983b4dac556ce734980fbf4ab60a959ac9821d642c5c2a567d19",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "allowance",
+            "source_mapping": {
+              "start": 4127,
+              "length": 146
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABStandardToken",
+                "source_mapping": {
+                  "start": 2349,
+                  "length": 2037
+                }
+              },
+              "signature": "allowance(address,address)"
+            }
+          },
+          {
+            "type": "function",
+            "name": "allowance",
+            "source_mapping": {
+              "start": 2075,
+              "length": 97
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABTokenBase",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 2318
+                }
+              },
+              "signature": "allowance(address,address)"
+            }
+          }
+        ],
+        "description": "allowance(address,address) should be declared external:\n\t- ABStandardToken.allowance(address,address) ()\n\t- ABTokenBase.allowance(address,address) ()\n",
+        "markdown": "allowance(address,address) should be declared external:\n\t- [ABStandardToken.allowance(address,address)]()\n\t- [ABTokenBase.allowance(address,address)]()\n",
+        "first_markdown_element": "",
+        "id": "edc077453e9581a8f140cb4743d8f293c078fb2ef480122b1a8342f83f083008",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "approveAndCall",
+            "source_mapping": {
+              "start": 5638,
+              "length": 805
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ABToken",
+                "source_mapping": {
+                  "start": 4390,
+                  "length": 2056
+                }
+              },
+              "signature": "approveAndCall(address,uint256,bytes)"
+            }
+          }
+        ],
+        "description": "approveAndCall(address,uint256,bytes) should be declared external:\n\t- ABToken.approveAndCall(address,uint256,bytes) ()\n",
+        "markdown": "approveAndCall(address,uint256,bytes) should be declared external:\n\t- [ABToken.approveAndCall(address,uint256,bytes)]()\n",
+        "first_markdown_element": "",
+        "id": "4d0454519bd4e4d3495aed21d3e59fb4b862dd573f257e40415a911b79c0b320",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      }
+    ]
+  }
+}

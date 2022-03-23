@@ -1,0 +1,57 @@
+==== Exception State ====
+SWC ID: 110
+Severity: Medium
+Contract: StandardToken
+Function name: increaseApproval(address,uint256)
+PC address: 1735
+Estimated Gas Usage: 1329 - 2464
+An assertion violation was triggered.
+It is possible to trigger an assertion violation. Note that Solidity assert() statements should only be used to check invariants. Review the transaction trace generated for this issue and either make sure your program logic is correct, or use require() instead of assert() if your goal is to constrain user inputs or enforce preconditions. Remember to validate inputs from both callers (for instance, via passed arguments) and callees (for instance, via return values).
+--------------------
+In file: ./0x001f0aa5da15585e5b2305dbab2bac425ea71007_ext.sol:93
+
+RC20Basic.sol
+
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x100000100008022, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x4000000901, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: approve(address,uint256), txdata: 0x095ea7b30000000000000000000000000000000000000000000000000000000000000000c3, value: 0x0
+Caller: [SOMEGUY], function: increaseApproval(address,uint256), txdata: 0xd73dd6230000000000000000000000000000000000000000000000000000000000000000c5, value: 0x0
+
+==== Exception State ====
+SWC ID: 110
+Severity: Medium
+Contract: IpsxToken
+Function name: increaseApproval(address,uint256)
+PC address: 3333
+Estimated Gas Usage: 1527 - 2662
+An assertion violation was triggered.
+It is possible to trigger an assertion violation. Note that Solidity assert() statements should only be used to check invariants. Review the transaction trace generated for this issue and either make sure your program logic is correct, or use require() instead of assert() if your goal is to constrain user inputs or enforce preconditions. Remember to validate inputs from both callers (for instance, via passed arguments) and callees (for instance, via return values).
+--------------------
+In file: ./0x001f0aa5da15585e5b2305dbab2bac425ea71007_ext.sol:93
+
+RC20Basic.sol
+
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x402000010010020, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2800400802, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: approve(address,uint256), txdata: 0x095ea7b30000000000000000000000004010404004200101200120201020408020800804b7, value: 0x0
+Caller: [ATTACKER], function: increaseApproval(address,uint256), txdata: 0xd73dd6230000000000000000000000004010404004200101200120201020408020800804e0, value: 0x0
+
+

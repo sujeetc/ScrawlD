@@ -6,7 +6,7 @@ import pandas as pd
 import time
 import os
 import sys
-csv_address_file='../contracts.csv'
+csv_address_file='data/contracts.csv'
 
 report_dir = '/home'
 keys = ['XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX','XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX']

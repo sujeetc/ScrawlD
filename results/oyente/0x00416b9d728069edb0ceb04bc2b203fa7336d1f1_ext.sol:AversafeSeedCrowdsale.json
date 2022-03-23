@@ -1,0 +1,38 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:284:13: Warning: Timestamp Dependency.\n    require(block.timestamp > crowdsaleEndedTime && ethRaised < minCap", 
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:157:12: Warning: Timestamp Dependency.\n    } else if (block.timestamp > presaleUnlimitedStartTime && block.timestamp <= crowdsaleEndedTime) {  // Check if we are in presale unlimited phase\r\n    ^\nSpanning multiple lines.", 
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:164:7: Warning: Timestamp Dependency.\n      if (crowdsaleState != state.crowdsaleEnded && block.timestamp > crowdsaleEndedTime) {// Check if crowdsale is over\r\n      ^\nSpanning multiple lines.", 
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:157:16: Warning: Timestamp Dependency.\n    } else if (block.timestamp > presaleUnlimitedStartTime && block.timestamp <= crowdsaleEndedTime", 
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:151:9: Warning: Timestamp Dependency.\n    if (block.timestamp > presaleStartTime && block.timestamp <= presaleUnlimitedStartTime", 
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:314:5: Warning: Timestamp Dependency.\n    require(block.timestamp > crowdsaleEndedTime)", 
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:151:5: Warning: Timestamp Dependency.\n    if (block.timestamp > presaleStartTime && block.timestamp <= presaleUnlimitedStartTime) { // Check if we are in presale phase\r\n    ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:232:5: Warning: Integer Overflow.\n    ethRaised += contributionAmount\nInteger Overflow occurs if:\n    ethRaised = 28439180060253674343203082652083447757826223313481954864531466613305697632256\n    crowdsaleState = 1\n    minCap = 4304077571164731577869582370969082550313523295711221254353720986853714165761\n    maxP1Cap = 4304077571164731577869582370969082550313523295711221254353720986853714165760\n    crowdsaleEndedTime = 0\n    presaleUnlimitedStartTime = 0\n    presaleStartTime = 0\n    maxCap = 87352909177062521080367902356604460095443761352158609174926117394607432007679\n    locked = 0\n    contributorList[_contributor].contributionAmount = 0", 
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:230:7: Warning: Integer Overflow.\n      contributorList[_contributor].contributionAmount += contributionAmount\nInteger Overflow occurs if:\n    contributorList[_contributor].contributionAmount = 94031629257209294531498716157906055305068684352544931811263308244138852352000\n    crowdsaleState = 1\n    ethRaised = 2374642508982041873261231430332512659311399704675101381983469862677706178560\n    minCap = 1\n    maxP1Cap = 0\n    crowdsaleEndedTime = 0\n    presaleUnlimitedStartTime = 0\n    presaleStartTime = 0\n    maxCap = 113417446728334153550309753578355395193958584960965462657474114145235423461375\n    locked = 0", 
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:228:7: Warning: Integer Overflow.\n      nextContributorIndex++\nInteger Overflow occurs if:\n    crowdsaleState = 1\n    ethRaised = 24135102489088942765333500281114365207512700017770733610177745626451983466496\n    nextContributorIndex = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    minCap = 1\n    maxP1Cap = 0\n    crowdsaleEndedTime = 0\n    presaleUnlimitedStartTime = 0\n    presaleStartTime = 0\n    maxCap = 91656986748227252658237484727573542645757284647869830429279838381461146173439\n    locked = 0\n    contributorList[_contributor].contributionAmount = 0", 
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:221:9: Warning: Integer Overflow.\n    if (ethRaised + contributionAmount\nInteger Overflow occurs if:\n    ethRaised = 105057703182772128742632175276418273629171146184603311179880813568987690705446\n    crowdsaleState = 1\n    maxP1Cap = 19498489899535188891059770262990220093420479897422235935531973803096063329691\n    contributorList[_contributor].contributionAmount = 61424110794147997086238904732313688328237966269410341634171094139439643909259\n    crowdsaleEndedTime = 0\n    presaleUnlimitedStartTime = 0\n    presaleStartTime = 0\n    maxCap = 10734386054544066680938809732269634224098838481037252859576770438925438934489\n    locked = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:196:22: Warning: Integer Underflow.\n        maxContrib = maxP1Cap - ethRaised\nInteger Underflow occurs if:\n    maxP1Cap = 41512071118323885268162914042249216\n    ethRaised = 41538374868278621028243970633760769\n    crowdsaleState = 1\n    contributorList[_contributor].contributionAmount = 91656986748227252658237484727573542645757284674173580384015598462517737684992\n    crowdsaleEndedTime = 0\n    presaleUnlimitedStartTime = 0\n    presaleStartTime = 0\n    maxCap = 115792089237316195423570985008687907853269943127265695760836555763942495879166\n    locked = 0", 
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:200:20: Warning: Integer Underflow.\n      maxContrib = maxCap - ethRaised\nInteger Underflow occurs if:\n    ethRaised = 102844034832575377634685576568290398131255103204640315269971968\n    crowdsaleState = 2\n    maxCap = 2658455991569834111602541573810683904\n    crowdsaleEndedTime = 0\n    presaleUnlimitedStartTime = 0\n    presaleStartTime = 0\n    locked = 0", 
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:193:20: Warning: Integer Underflow.\n      maxContrib = priorityPassContract.getAccountLimit(_contributor) - contributorList[_contributor].contributionAmount\nInteger Underflow occurs if:\n    crowdsaleState = 1\n    contributorList[_contributor].contributionAmount = 91656986748227252658237484727573542645757284647869830429279838381461146173441\n    crowdsaleEndedTime = 0\n    presaleUnlimitedStartTime = 0\n    presaleStartTime = 0\n    maxCap = 0\n    ethRaised = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    locked = 0", 
+   "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:195:24: Warning: Integer Underflow.\n\t    if (maxContrib > (maxP1Cap - ethRaised\nInteger Underflow occurs if:\n    crowdsaleState = 1\n    ethRaised = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maxP1Cap = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    crowdsaleEndedTime = 0\n    presaleUnlimitedStartTime = 0\n    presaleStartTime = 0\n    maxCap = 0\n    locked = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:237:7: Warning: Transaction-Ordering Dependency.\n      _contributor.transfer(returnAmount)"
+   ], 
+   [
+    "./0x00416b9d728069edb0ceb04bc2b203fa7336d1f1_ext.sol:179:7: Warning: Transaction-Ordering Dependency.\n      msg.sender.transfer(msg.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "96.9"
+}

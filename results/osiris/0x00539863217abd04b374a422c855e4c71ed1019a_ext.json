@@ -1,0 +1,172 @@
+{"Storage-1":{
+ "execution_paths": "15", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "1.95481014252", 
+ "signedness": false, 
+ "evm_code_coverage": "99.7", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:25:5\nstoredAmount += msg.value\n^", 
+ "money_concurrency": "\nFlow 1:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:39:5\nto.transfer(this.balance)\n^\nFlow 2:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:32:5\nowner.transfer(this.balance)\n^", 
+ "truncation": false
+},"Storage-2":{
+ "execution_paths": "15", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "1.87054896355", 
+ "signedness": false, 
+ "evm_code_coverage": "99.7", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:25:5\nstoredAmount += msg.value\n^", 
+ "money_concurrency": "\nFlow 1:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:39:5\nto.transfer(this.balance)\n^\nFlow 2:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:32:5\nowner.transfer(this.balance)\n^", 
+ "truncation": false
+},"Storage-3":{
+ "execution_paths": "15", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "1.9675219059", 
+ "signedness": false, 
+ "evm_code_coverage": "99.7", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:25:5\nstoredAmount += msg.value\n^", 
+ "money_concurrency": "\nFlow 1:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:39:5\nto.transfer(this.balance)\n^\nFlow 2:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:32:5\nowner.transfer(this.balance)\n^", 
+ "truncation": false
+},"Storage-4":{
+ "execution_paths": "15", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "1.41032290459", 
+ "signedness": false, 
+ "evm_code_coverage": "99.7", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:25:5\nstoredAmount += msg.value\n^", 
+ "money_concurrency": "\nFlow 1:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:39:5\nto.transfer(this.balance)\n^\nFlow 2:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:32:5\nowner.transfer(this.balance)\n^", 
+ "truncation": false
+},"Storage-5":{
+ "execution_paths": "15", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "2.01992988586", 
+ "signedness": false, 
+ "evm_code_coverage": "99.7", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:25:5\nstoredAmount += msg.value\n^", 
+ "money_concurrency": "\nFlow 1:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:39:5\nto.transfer(this.balance)\n^\nFlow 2:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:32:5\nowner.transfer(this.balance)\n^", 
+ "truncation": false
+},"Storage-6":{
+ "execution_paths": "15", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "2.05427002907", 
+ "signedness": false, 
+ "evm_code_coverage": "99.7", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:25:5\nstoredAmount += msg.value\n^", 
+ "money_concurrency": "\nFlow 1:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:39:5\nto.transfer(this.balance)\n^\nFlow 2:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:32:5\nowner.transfer(this.balance)\n^", 
+ "truncation": false
+},"Storage-7":{
+ "execution_paths": "15", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "2.01912498474", 
+ "signedness": false, 
+ "evm_code_coverage": "99.7", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:25:5\nstoredAmount += msg.value\n^", 
+ "money_concurrency": "\nFlow 1:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:39:5\nto.transfer(this.balance)\n^\nFlow 2:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:32:5\nowner.transfer(this.balance)\n^", 
+ "truncation": false
+},"Storage-8":{
+ "execution_paths": "15", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "2.02776217461", 
+ "signedness": false, 
+ "evm_code_coverage": "99.7", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:25:5\nstoredAmount += msg.value\n^", 
+ "money_concurrency": "\nFlow 1:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:39:5\nto.transfer(this.balance)\n^\nFlow 2:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:32:5\nowner.transfer(this.balance)\n^", 
+ "truncation": false
+},"Storage-9":{
+ "execution_paths": "15", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "1.71736311913", 
+ "signedness": false, 
+ "evm_code_coverage": "99.7", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:25:5\nstoredAmount += msg.value\n^", 
+ "money_concurrency": "\nFlow 1:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:39:5\nto.transfer(this.balance)\n^\nFlow 2:\n./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:Storage:32:5\nowner.transfer(this.balance)\n^", 
+ "truncation": false
+}}

@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x00059ae69c1622a7542edc15e8d17b060fe307b6_ext.sol:302:5: Warning: Integer Overflow.\n    function removeFreezableAddresses(address[] addrs) public onlyOwner returns(bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./0x00059ae69c1622a7542edc15e8d17b060fe307b6_ext.sol:286:5: Warning: Integer Overflow.\n    function addFreezableAddresses(address[] addrs) public onlyOwner returns(bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./0x00059ae69c1622a7542edc15e8d17b060fe307b6_ext.sol:118:13: Warning: Integer Overflow.\n        c = a + b\nInteger Overflow occurs if:\n    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    _to = 1461501637330902918203684832716283019655932542975\n    freezeAddresses[_to] = 0\n    freezeAddresses[_from] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.6"
+}

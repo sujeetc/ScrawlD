@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./0x0002562b9c0a85ebb92989fc02d6486b3d0ccbeb_ext.sol:290:3: Warning: Integer Underflow.\n  string public name = \"DataMiningAlliance\"", 
+   "./0x0002562b9c0a85ebb92989fc02d6486b3d0ccbeb_ext.sol:291:3: Warning: Integer Underflow.\n  string public symbol = \"DMA\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.1"
+}

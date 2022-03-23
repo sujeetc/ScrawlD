@@ -1,0 +1,1933 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "mk_contract_address",
+            "source_mapping": {
+              "start": 838,
+              "length": 2156
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "mk_contract_address(address,uint256)"
+            }
+          }
+        ],
+        "description": "GasToken2.mk_contract_address(address,uint256) () is declared view but contains assembly code\n",
+        "markdown": "[GasToken2.mk_contract_address(address,uint256)]() is declared view but contains assembly code\n",
+        "first_markdown_element": "",
+        "id": "0897f9feb22c937536ad1da5430db75295abb353f818295683468841414d8a1e",
+        "additional_fields": {
+          "contains_assembly": true
+        },
+        "check": "constant-function-asm",
+        "impact": "Medium",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "free",
+            "source_mapping": {
+              "start": 10951,
+              "length": 315
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "free(uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "destroyChildren(value)",
+            "source_mapping": {
+              "start": 11154,
+              "length": 22
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "free",
+                "source_mapping": {
+                  "start": 10951,
+                  "length": 315
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "free(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "external_calls"
+            }
+          },
+          {
+            "type": "node",
+            "name": "mk_contract_address(this,i).call()",
+            "source_mapping": {
+              "start": 10478,
+              "length": 35
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "destroyChildren",
+                "source_mapping": {
+                  "start": 10250,
+                  "length": 316
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "destroyChildren(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "external_calls_sending_eth"
+            }
+          },
+          {
+            "type": "node",
+            "name": "s_balances[msg.sender] = from_balance - value",
+            "source_mapping": {
+              "start": 11189,
+              "length": 45
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "free",
+                "source_mapping": {
+                  "start": 10951,
+                  "length": 315
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "free(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "variables_written",
+              "variable_name": "s_balances"
+            }
+          }
+        ],
+        "description": "Reentrancy in GasToken2.free(uint256) ():\n\tExternal calls:\n\t- destroyChildren(value) ()\n\t\t- mk_contract_address(this,i).call() ()\n\tState variables written after the call(s):\n\t- s_balances[msg.sender] = from_balance - value ()\n",
+        "markdown": "Reentrancy in [GasToken2.free(uint256)]():\n\tExternal calls:\n\t- [destroyChildren(value)]()\n\t\t- [mk_contract_address(this,i).call()]()\n\tState variables written after the call(s):\n\t- [s_balances[msg.sender] = from_balance - value]()\n",
+        "first_markdown_element": "",
+        "id": "045e3150a08ec5ca142d8b327fdbea601349d668fccf86afd0475cb4dd05311e",
+        "check": "reentrancy-no-eth",
+        "impact": "Medium",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "freeFrom",
+            "source_mapping": {
+              "start": 12207,
+              "length": 643
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "freeFrom(address,uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "destroyChildren(value)",
+            "source_mapping": {
+              "start": 12681,
+              "length": 22
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "freeFrom",
+                "source_mapping": {
+                  "start": 12207,
+                  "length": 643
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "freeFrom(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "external_calls"
+            }
+          },
+          {
+            "type": "node",
+            "name": "mk_contract_address(this,i).call()",
+            "source_mapping": {
+              "start": 10478,
+              "length": 35
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "destroyChildren",
+                "source_mapping": {
+                  "start": 10250,
+                  "length": 316
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "destroyChildren(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "external_calls_sending_eth"
+            }
+          },
+          {
+            "type": "node",
+            "name": "from_allowances[spender] = spender_allowance - value",
+            "source_mapping": {
+              "start": 12766,
+              "length": 52
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "freeFrom",
+                "source_mapping": {
+                  "start": 12207,
+                  "length": 643
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "freeFrom(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "variables_written",
+              "variable_name": "s_allowances"
+            }
+          },
+          {
+            "type": "node",
+            "name": "s_balances[from] = from_balance - value",
+            "source_mapping": {
+              "start": 12716,
+              "length": 39
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "freeFrom",
+                "source_mapping": {
+                  "start": 12207,
+                  "length": 643
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "freeFrom(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "variables_written",
+              "variable_name": "s_balances"
+            }
+          }
+        ],
+        "description": "Reentrancy in GasToken2.freeFrom(address,uint256) ():\n\tExternal calls:\n\t- destroyChildren(value) ()\n\t\t- mk_contract_address(this,i).call() ()\n\tState variables written after the call(s):\n\t- from_allowances[spender] = spender_allowance - value ()\n\t- s_balances[from] = from_balance - value ()\n",
+        "markdown": "Reentrancy in [GasToken2.freeFrom(address,uint256)]():\n\tExternal calls:\n\t- [destroyChildren(value)]()\n\t\t- [mk_contract_address(this,i).call()]()\n\tState variables written after the call(s):\n\t- [from_allowances[spender] = spender_allowance - value]()\n\t- [s_balances[from] = from_balance - value]()\n",
+        "first_markdown_element": "",
+        "id": "97679c6561be8cb2c45d426f2be2b9ba77431abebbc242ffe1ff2da97f31efea",
+        "check": "reentrancy-no-eth",
+        "impact": "Medium",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "freeFromUpTo",
+            "source_mapping": {
+              "start": 13182,
+              "length": 670
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "freeFromUpTo(address,uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "destroyChildren(value)",
+            "source_mapping": {
+              "start": 13682,
+              "length": 22
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "freeFromUpTo",
+                "source_mapping": {
+                  "start": 13182,
+                  "length": 670
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "freeFromUpTo(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "external_calls"
+            }
+          },
+          {
+            "type": "node",
+            "name": "mk_contract_address(this,i).call()",
+            "source_mapping": {
+              "start": 10478,
+              "length": 35
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "destroyChildren",
+                "source_mapping": {
+                  "start": 10250,
+                  "length": 316
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "destroyChildren(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "external_calls_sending_eth"
+            }
+          },
+          {
+            "type": "node",
+            "name": "from_allowances[spender] = spender_allowance - value",
+            "source_mapping": {
+              "start": 13767,
+              "length": 52
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "freeFromUpTo",
+                "source_mapping": {
+                  "start": 13182,
+                  "length": 670
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "freeFromUpTo(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "variables_written",
+              "variable_name": "s_allowances"
+            }
+          },
+          {
+            "type": "node",
+            "name": "s_balances[from] = from_balance - value",
+            "source_mapping": {
+              "start": 13717,
+              "length": 39
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "freeFromUpTo",
+                "source_mapping": {
+                  "start": 13182,
+                  "length": 670
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "freeFromUpTo(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "variables_written",
+              "variable_name": "s_balances"
+            }
+          }
+        ],
+        "description": "Reentrancy in GasToken2.freeFromUpTo(address,uint256) ():\n\tExternal calls:\n\t- destroyChildren(value) ()\n\t\t- mk_contract_address(this,i).call() ()\n\tState variables written after the call(s):\n\t- from_allowances[spender] = spender_allowance - value ()\n\t- s_balances[from] = from_balance - value ()\n",
+        "markdown": "Reentrancy in [GasToken2.freeFromUpTo(address,uint256)]():\n\tExternal calls:\n\t- [destroyChildren(value)]()\n\t\t- [mk_contract_address(this,i).call()]()\n\tState variables written after the call(s):\n\t- [from_allowances[spender] = spender_allowance - value]()\n\t- [s_balances[from] = from_balance - value]()\n",
+        "first_markdown_element": "",
+        "id": "7e3f66f3b0cdd5a8026ae3980393abfb8648846830f7b8536e03287a35082324",
+        "check": "reentrancy-no-eth",
+        "impact": "Medium",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "freeUpTo",
+            "source_mapping": {
+              "start": 11568,
+              "length": 329
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "freeUpTo(uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "destroyChildren(value)",
+            "source_mapping": {
+              "start": 11784,
+              "length": 22
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "freeUpTo",
+                "source_mapping": {
+                  "start": 11568,
+                  "length": 329
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "freeUpTo(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "external_calls"
+            }
+          },
+          {
+            "type": "node",
+            "name": "mk_contract_address(this,i).call()",
+            "source_mapping": {
+              "start": 10478,
+              "length": 35
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "destroyChildren",
+                "source_mapping": {
+                  "start": 10250,
+                  "length": 316
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "destroyChildren(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "external_calls_sending_eth"
+            }
+          },
+          {
+            "type": "node",
+            "name": "s_balances[msg.sender] = from_balance - value",
+            "source_mapping": {
+              "start": 11819,
+              "length": 45
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "freeUpTo",
+                "source_mapping": {
+                  "start": 11568,
+                  "length": 329
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "freeUpTo(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "variables_written",
+              "variable_name": "s_balances"
+            }
+          }
+        ],
+        "description": "Reentrancy in GasToken2.freeUpTo(uint256) ():\n\tExternal calls:\n\t- destroyChildren(value) ()\n\t\t- mk_contract_address(this,i).call() ()\n\tState variables written after the call(s):\n\t- s_balances[msg.sender] = from_balance - value ()\n",
+        "markdown": "Reentrancy in [GasToken2.freeUpTo(uint256)]():\n\tExternal calls:\n\t- [destroyChildren(value)]()\n\t\t- [mk_contract_address(this,i).call()]()\n\tState variables written after the call(s):\n\t- [s_balances[msg.sender] = from_balance - value]()\n",
+        "first_markdown_element": "",
+        "id": "a9778ae645f10cffcef2fec000e742e631a1a0983760a1358a988c56c1c3ef3d",
+        "check": "reentrancy-no-eth",
+        "impact": "Medium",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "destroyChildren",
+            "source_mapping": {
+              "start": 10250,
+              "length": 316
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "destroyChildren(uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "mk_contract_address(this,i).call()",
+            "source_mapping": {
+              "start": 10478,
+              "length": 35
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "destroyChildren",
+                "source_mapping": {
+                  "start": 10250,
+                  "length": 316
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "destroyChildren(uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "GasToken2.destroyChildren(uint256) () ignores return value by mk_contract_address(this,i).call() ()\n",
+        "markdown": "[GasToken2.destroyChildren(uint256)]() ignores return value by [mk_contract_address(this,i).call()]()\n",
+        "first_markdown_element": "",
+        "id": "67d42dab501b9c4bd143c3de7344e014db24f0870db9ff72b02d457391f332cd",
+        "check": "unchecked-lowlevel",
+        "impact": "Medium",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "destroyChildren",
+            "source_mapping": {
+              "start": 10250,
+              "length": 316
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "destroyChildren(uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "mk_contract_address(this,i).call()",
+            "source_mapping": {
+              "start": 10478,
+              "length": 35
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "destroyChildren",
+                "source_mapping": {
+                  "start": 10250,
+                  "length": 316
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "destroyChildren(uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "GasToken2.destroyChildren(uint256) () has external calls inside a loop: mk_contract_address(this,i).call() ()\n",
+        "markdown": "[GasToken2.destroyChildren(uint256)]() has external calls inside a loop: [mk_contract_address(this,i).call()]()\n",
+        "first_markdown_element": "",
+        "id": "6f0586e8ee1649725c626bed02d7618aaef0deb40ca7089689942993fc0c2667",
+        "check": "calls-loop",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "mk_contract_address",
+            "source_mapping": {
+              "start": 838,
+              "length": 2156
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "mk_contract_address(address,uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "",
+            "source_mapping": {
+              "start": 2526,
+              "length": 446
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "mk_contract_address",
+                "source_mapping": {
+                  "start": 838,
+                  "length": 2156
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "mk_contract_address(address,uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "GasToken2.mk_contract_address(address,uint256) () uses assembly\n\t- INLINE ASM ()\n",
+        "markdown": "[GasToken2.mk_contract_address(address,uint256)]() uses assembly\n\t- [INLINE ASM]()\n",
+        "first_markdown_element": "",
+        "id": "ff06fa8f7788707216a66b6b1f2978b24bf95a6fc3a19760f91befea489f6eef",
+        "check": "assembly",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "makeChild",
+            "source_mapping": {
+              "start": 7217,
+              "length": 1744
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "makeChild()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "",
+            "source_mapping": {
+              "start": 7281,
+              "length": 1680
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "makeChild",
+                "source_mapping": {
+                  "start": 7217,
+                  "length": 1744
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "makeChild()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "GasToken2.makeChild() () uses assembly\n\t- INLINE ASM ()\n",
+        "markdown": "[GasToken2.makeChild()]() uses assembly\n\t- [INLINE ASM]()\n",
+        "first_markdown_element": "",
+        "id": "d85b1e43018d8a156e831af78795a4a8707321d9cf0dc197dbdd0d9838f0c4b3",
+        "check": "assembly",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "pragma",
+            "name": "^0.4.10",
+            "source_mapping": {
+              "start": 0,
+              "length": 24
+            },
+            "type_specific_fields": {
+              "directive": [
+                "solidity",
+                "^",
+                "0.4",
+                ".10"
+              ]
+            }
+          }
+        ],
+        "description": "Pragma version^0.4.10 () allows old versions\n",
+        "markdown": "Pragma version[^0.4.10]() allows old versions\n",
+        "first_markdown_element": "",
+        "id": "585d0efb95cc5ddba951b2df4d1064a238c383e91df65f88a41cec6cca3a639d",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [],
+        "description": "solc-0.4.10 is not recommended for deployment\n",
+        "markdown": "solc-0.4.10 is not recommended for deployment\n",
+        "first_markdown_element": "",
+        "id": "0eb2863571dc5faae5942bcb279abacd3e70424aa95146384321c9743a3cf58c",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "destroyChildren",
+            "source_mapping": {
+              "start": 10250,
+              "length": 316
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "destroyChildren(uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "mk_contract_address(this,i).call()",
+            "source_mapping": {
+              "start": 10478,
+              "length": 35
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "destroyChildren",
+                "source_mapping": {
+                  "start": 10250,
+                  "length": 316
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasToken2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 13827
+                    }
+                  },
+                  "signature": "destroyChildren(uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Low level call in GasToken2.destroyChildren(uint256) ():\n\t- mk_contract_address(this,i).call() ()\n",
+        "markdown": "Low level call in [GasToken2.destroyChildren(uint256)]():\n\t- [mk_contract_address(this,i).call()]()\n",
+        "first_markdown_element": "",
+        "id": "cd1bb0a8f4a5f4b111d0853ba202a0658537f81fb1d9e5669e8a97b5d682820a",
+        "check": "low-level-calls",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "count_bytes",
+            "source_mapping": {
+              "start": 599,
+              "length": 231
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "count_bytes(uint256)"
+            },
+            "additional_fields": {
+              "target": "function",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Function GasToken2.count_bytes(uint256) () is not in mixedCase\n",
+        "markdown": "Function [GasToken2.count_bytes(uint256)]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "4d1546096b7bdd7480c49fa428f39eeb52e02e3acd710c6c69c7f1c4ff4151ee",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "mk_contract_address",
+            "source_mapping": {
+              "start": 838,
+              "length": 2156
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "mk_contract_address(address,uint256)"
+            },
+            "additional_fields": {
+              "target": "function",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Function GasToken2.mk_contract_address(address,uint256) () is not in mixedCase\n",
+        "markdown": "Function [GasToken2.mk_contract_address(address,uint256)]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "157fa971f6515f17ee21ed352b36a1c71102bc1a4a4c0b204a62eed0461fec06",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "ADDRESS_BYTES",
+            "source_mapping": {
+              "start": 392,
+              "length": 35
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "variable",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Variable GasToken2.ADDRESS_BYTES () is not in mixedCase\n",
+        "markdown": "Variable [GasToken2.ADDRESS_BYTES]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "a817d02563e9db8284c7ca936b9eba4f2108a379f5c8365a6ef4efdc23613dfc",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "MAX_SINGLE_BYTE",
+            "source_mapping": {
+              "start": 434,
+              "length": 38
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "variable",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Variable GasToken2.MAX_SINGLE_BYTE () is not in mixedCase\n",
+        "markdown": "Variable [GasToken2.MAX_SINGLE_BYTE]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "12cc0cea92c5232f9dccc04df0b6ff1bebf579e7c7365a68643e06978badb617",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "MAX_NONCE",
+            "source_mapping": {
+              "start": 479,
+              "length": 39
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "variable",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Variable GasToken2.MAX_NONCE () is not in mixedCase\n",
+        "markdown": "Variable [GasToken2.MAX_NONCE]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "0ed30448375edc9a19e93c1cdbd1faeba648248a3a032ab2d0a9a60b19a0ef95",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "s_balances",
+            "source_mapping": {
+              "start": 3214,
+              "length": 38
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "variable",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Variable GasToken2.s_balances () is not in mixedCase\n",
+        "markdown": "Variable [GasToken2.s_balances]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "f53e9ebe658ce761af0d47d342adbeacdce2482e897fbd15bb372b288a16afcc",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "s_allowances",
+            "source_mapping": {
+              "start": 3298,
+              "length": 60
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "variable",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Variable GasToken2.s_allowances () is not in mixedCase\n",
+        "markdown": "Variable [GasToken2.s_allowances]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "5211dfea40800d24fdaabaf33730b2e6db48c425829dd6c770b69b5c357c9549",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "s_head",
+            "source_mapping": {
+              "start": 6805,
+              "length": 14
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "variable",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Variable GasToken2.s_head () is not in mixedCase\n",
+        "markdown": "Variable [GasToken2.s_head]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "e4fc06996b0246ddaac14d5aeabd47eced85acd8d6206ff693e0d56f6adccb4c",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "s_tail",
+            "source_mapping": {
+              "start": 6826,
+              "length": 14
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "variable",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Variable GasToken2.s_tail () is not in mixedCase\n",
+        "markdown": "Variable [GasToken2.s_tail]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "8d384f409e764c09fdea94727c667a5cea5cb2c5c52c887dfc450fa532209ecf",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "event",
+            "name": "Transfer",
+            "source_mapping": {
+              "start": 3367,
+              "length": 72
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "Transfer(address,address,uint256)"
+            },
+            "additional_fields": {
+              "parameter_name": "from"
+            }
+          }
+        ],
+        "description": "ERC20 event GasToken2Transfer(address,address,uint256) ()does not index parameter from\n",
+        "markdown": "ERC20 event [GasToken2Transfer(address,address,uint256)]()does not index parameter from\n",
+        "first_markdown_element": "",
+        "id": "72278296c3008194d947a706d3ac9c6a074c5cf87fa52793d84326bc5ad5861f",
+        "check": "erc20-indexed",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "event",
+            "name": "Transfer",
+            "source_mapping": {
+              "start": 3367,
+              "length": 72
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "Transfer(address,address,uint256)"
+            },
+            "additional_fields": {
+              "parameter_name": "to"
+            }
+          }
+        ],
+        "description": "ERC20 event GasToken2Transfer(address,address,uint256) ()does not index parameter to\n",
+        "markdown": "ERC20 event [GasToken2Transfer(address,address,uint256)]()does not index parameter to\n",
+        "first_markdown_element": "",
+        "id": "3a2a56cb6b9652de8243935f1e68668ac0beb6ac3d586bf27fa2be57ad2ee1d4",
+        "check": "erc20-indexed",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "event",
+            "name": "Approval",
+            "source_mapping": {
+              "start": 3447,
+              "length": 78
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "Approval(address,address,uint256)"
+            },
+            "additional_fields": {
+              "parameter_name": "owner"
+            }
+          }
+        ],
+        "description": "ERC20 event GasToken2Approval(address,address,uint256) ()does not index parameter owner\n",
+        "markdown": "ERC20 event [GasToken2Approval(address,address,uint256)]()does not index parameter owner\n",
+        "first_markdown_element": "",
+        "id": "45abcf964737b929a695750b6cc92805e9489d57ab24dffa8b66dc74db2f5fe3",
+        "check": "erc20-indexed",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "event",
+            "name": "Approval",
+            "source_mapping": {
+              "start": 3447,
+              "length": 78
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "Approval(address,address,uint256)"
+            },
+            "additional_fields": {
+              "parameter_name": "spender"
+            }
+          }
+        ],
+        "description": "ERC20 event GasToken2Approval(address,address,uint256) ()does not index parameter spender\n",
+        "markdown": "ERC20 event [GasToken2Approval(address,address,uint256)]()does not index parameter spender\n",
+        "first_markdown_element": "",
+        "id": "7ff9c62c0613113ace6581f444924a98dd3d845fed874a914bbcf41b09bf40b9",
+        "check": "erc20-indexed",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "decimals",
+            "source_mapping": {
+              "start": 5994,
+              "length": 34
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            }
+          },
+          {
+            "type": "contract",
+            "name": "GasToken2",
+            "source_mapping": {
+              "start": 28,
+              "length": 13827
+            }
+          }
+        ],
+        "description": "GasToken2.decimals () is never used in GasToken2 ()\n",
+        "markdown": "[GasToken2.decimals]() is never used in [GasToken2]()\n",
+        "first_markdown_element": "",
+        "id": "191e92b15af0c81e84b4109862706a20965211d68ed9b3590897bc27e53c3436",
+        "check": "unused-state",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "name",
+            "source_mapping": {
+              "start": 6035,
+              "length": 43
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            }
+          },
+          {
+            "type": "contract",
+            "name": "GasToken2",
+            "source_mapping": {
+              "start": 28,
+              "length": 13827
+            }
+          }
+        ],
+        "description": "GasToken2.name () is never used in GasToken2 ()\n",
+        "markdown": "[GasToken2.name]() is never used in [GasToken2]()\n",
+        "first_markdown_element": "",
+        "id": "909991bbf5525b062843b21a4b7c763c360909be289d78ba52e2acd6b902ae68",
+        "check": "unused-state",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "symbol",
+            "source_mapping": {
+              "start": 6085,
+              "length": 38
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            }
+          },
+          {
+            "type": "contract",
+            "name": "GasToken2",
+            "source_mapping": {
+              "start": 28,
+              "length": 13827
+            }
+          }
+        ],
+        "description": "GasToken2.symbol () is never used in GasToken2 ()\n",
+        "markdown": "[GasToken2.symbol]() is never used in [GasToken2]()\n",
+        "first_markdown_element": "",
+        "id": "1fdd4727f332802db6f5f17181f5cddde6dfbfc2a684b4b0debf81ecd323a5f8",
+        "check": "unused-state",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "ADDRESS_BYTES",
+            "source_mapping": {
+              "start": 392,
+              "length": 35
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            }
+          }
+        ],
+        "description": "GasToken2.ADDRESS_BYTES () should be constant\n",
+        "markdown": "[GasToken2.ADDRESS_BYTES]() should be constant\n",
+        "first_markdown_element": "",
+        "id": "1261de99405b9b202e7d9312ffdbe3ba194d4dc63e64e042d590f4a8736dae20",
+        "check": "constable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "MAX_NONCE",
+            "source_mapping": {
+              "start": 479,
+              "length": 39
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            }
+          }
+        ],
+        "description": "GasToken2.MAX_NONCE () should be constant\n",
+        "markdown": "[GasToken2.MAX_NONCE]() should be constant\n",
+        "first_markdown_element": "",
+        "id": "799a05e4e723f2d8a18ef991b74007693db9704ea5f80c69db4a825749611d50",
+        "check": "constable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "MAX_SINGLE_BYTE",
+            "source_mapping": {
+              "start": 434,
+              "length": 38
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            }
+          }
+        ],
+        "description": "GasToken2.MAX_SINGLE_BYTE () should be constant\n",
+        "markdown": "[GasToken2.MAX_SINGLE_BYTE]() should be constant\n",
+        "first_markdown_element": "",
+        "id": "2b704bf3c66bf358aab64f3cd5ba3868b1fae8d81ded079f41e407948e46382f",
+        "check": "constable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "decimals",
+            "source_mapping": {
+              "start": 5994,
+              "length": 34
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            }
+          }
+        ],
+        "description": "GasToken2.decimals () should be constant\n",
+        "markdown": "[GasToken2.decimals]() should be constant\n",
+        "first_markdown_element": "",
+        "id": "76094cdbea8c3e6605b9af599a6c9559963dc05e646a793f52a6fad4c2db9aea",
+        "check": "constable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "name",
+            "source_mapping": {
+              "start": 6035,
+              "length": 43
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            }
+          }
+        ],
+        "description": "GasToken2.name () should be constant\n",
+        "markdown": "[GasToken2.name]() should be constant\n",
+        "first_markdown_element": "",
+        "id": "1e6eea896ae5441ef41ad95628b7c117e466e2890937e5ad0d25e3780253ecd9",
+        "check": "constable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "symbol",
+            "source_mapping": {
+              "start": 6085,
+              "length": 38
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              }
+            }
+          }
+        ],
+        "description": "GasToken2.symbol () should be constant\n",
+        "markdown": "[GasToken2.symbol]() should be constant\n",
+        "first_markdown_element": "",
+        "id": "5a7b90dc69eeeb64d2e5402d068e28371c673ce93c9ba64187264117c7008bd8",
+        "check": "constable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "balanceOf",
+            "source_mapping": {
+              "start": 3611,
+              "length": 119
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "balanceOf(address)"
+            }
+          }
+        ],
+        "description": "balanceOf(address) should be declared external:\n\t- GasToken2.balanceOf(address) ()\n",
+        "markdown": "balanceOf(address) should be declared external:\n\t- [GasToken2.balanceOf(address)]()\n",
+        "first_markdown_element": "",
+        "id": "2c38d1ba4854bc630a0af11b5795d717d6eb97aac288781a1553c94a45815e3a",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 4155,
+              "length": 170
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "transfer(address,uint256)"
+            }
+          }
+        ],
+        "description": "transfer(address,uint256) should be declared external:\n\t- GasToken2.transfer(address,uint256) ()\n",
+        "markdown": "transfer(address,uint256) should be declared external:\n\t- [GasToken2.transfer(address,uint256)]()\n",
+        "first_markdown_element": "",
+        "id": "cb6be11ad285b818c25e35a3a915ed9f2f9ad9d788c50475485eed4533853e94",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transferFrom",
+            "source_mapping": {
+              "start": 4413,
+              "length": 362
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "transferFrom(address,address,uint256)"
+            }
+          }
+        ],
+        "description": "transferFrom(address,address,uint256) should be declared external:\n\t- GasToken2.transferFrom(address,address,uint256) ()\n",
+        "markdown": "transferFrom(address,address,uint256) should be declared external:\n\t- [GasToken2.transferFrom(address,address,uint256)]()\n",
+        "first_markdown_element": "",
+        "id": "5ca95c8ce6b554c24ab09e77c3455b07c07fbba84888abe61a6a778954840ce0",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "approve",
+            "source_mapping": {
+              "start": 4985,
+              "length": 337
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "approve(address,uint256)"
+            }
+          }
+        ],
+        "description": "approve(address,uint256) should be declared external:\n\t- GasToken2.approve(address,uint256) ()\n",
+        "markdown": "approve(address,uint256) should be declared external:\n\t- [GasToken2.approve(address,uint256)]()\n",
+        "first_markdown_element": "",
+        "id": "7358cfa49f03ea63a8aa1c26dde707524c87f009f0ecfeb92584bbd4e9611200",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "allowance",
+            "source_mapping": {
+              "start": 5648,
+              "length": 149
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "allowance(address,address)"
+            }
+          }
+        ],
+        "description": "allowance(address,address) should be declared external:\n\t- GasToken2.allowance(address,address) ()\n",
+        "markdown": "allowance(address,address) should be declared external:\n\t- [GasToken2.allowance(address,address)]()\n",
+        "first_markdown_element": "",
+        "id": "66d0428c21937213d2607f6d9f8b944719527d987e92e4bdb4331bce016a5eb3",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "totalSupply",
+            "source_mapping": {
+              "start": 7026,
+              "length": 105
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "totalSupply()"
+            }
+          }
+        ],
+        "description": "totalSupply() should be declared external:\n\t- GasToken2.totalSupply() ()\n",
+        "markdown": "totalSupply() should be declared external:\n\t- [GasToken2.totalSupply()]()\n",
+        "first_markdown_element": "",
+        "id": "117be70589e99b9b11f1b206b204a79bb39b38000a43b5a53d1cd2ccf1f8370b",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "mint",
+            "source_mapping": {
+              "start": 9150,
+              "length": 196
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "mint(uint256)"
+            }
+          }
+        ],
+        "description": "mint(uint256) should be declared external:\n\t- GasToken2.mint(uint256) ()\n",
+        "markdown": "mint(uint256) should be declared external:\n\t- [GasToken2.mint(uint256)]()\n",
+        "first_markdown_element": "",
+        "id": "1e81827c51dd5af694467898c80767157e906b6bdca84b8c6fe910f54c3775b5",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "free",
+            "source_mapping": {
+              "start": 10951,
+              "length": 315
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "free(uint256)"
+            }
+          }
+        ],
+        "description": "free(uint256) should be declared external:\n\t- GasToken2.free(uint256) ()\n",
+        "markdown": "free(uint256) should be declared external:\n\t- [GasToken2.free(uint256)]()\n",
+        "first_markdown_element": "",
+        "id": "847ecfdba20d6d52b3a0f98ea5007db392758f2e0e4239c23b6ebb9b57623028",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "freeFrom",
+            "source_mapping": {
+              "start": 12207,
+              "length": 643
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasToken2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 13827
+                }
+              },
+              "signature": "freeFrom(address,uint256)"
+            }
+          }
+        ],
+        "description": "freeFrom(address,uint256) should be declared external:\n\t- GasToken2.freeFrom(address,uint256) ()\n",
+        "markdown": "freeFrom(address,uint256) should be declared external:\n\t- [GasToken2.freeFrom(address,uint256)]()\n",
+        "first_markdown_element": "",
+        "id": "3e8d205276180abd3eeb34ace26f0b7f5c7329910d7c7e632c46227f692d75e1",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      }
+    ]
+  }
+}

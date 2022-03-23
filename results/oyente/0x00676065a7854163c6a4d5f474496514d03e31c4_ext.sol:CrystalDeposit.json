@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./0x00676065a7854163c6a4d5f474496514d03e31c4_ext.sol:276:9: Warning: Timestamp Dependency.\n        if (games[round].endTime <= now) endRound()"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x00676065a7854163c6a4d5f474496514d03e31c4_ext.sol:249:13: Warning: Integer Overflow.\n        if (games[round].endTime\nInteger Overflow occurs if:\n    _value = 1\n    games[round].startTime = 0\n    games[round].ended = 0", 
+   "./0x00676065a7854163c6a4d5f474496514d03e31c4_ext.sol:205:37: Warning: Integer Overflow.\n        uint256 crystalsLastRound = games[round].crystals\nInteger Overflow occurs if:\n    games[round].ended = 0\n    games[round].endTime = 0", 
+   "./0x00676065a7854163c6a4d5f474496514d03e31c4_ext.sol:292:13: Warning: Integer Overflow.\n            games[p.currentRound].ended\nInteger Overflow occurs if:\n    games[round].endTime = 1", 
+   "./0x00676065a7854163c6a4d5f474496514d03e31c4_ext.sol:232:9: Warning: Integer Overflow.\n        g.ended\nInteger Overflow occurs if:\n    games[round].ended = 0\n    games[round].endTime = 0", 
+   "./0x00676065a7854163c6a4d5f474496514d03e31c4_ext.sol:206:37: Warning: Integer Overflow.\n        uint256 prizePoolLastRound= games[round].prizePool\nInteger Overflow occurs if:\n    games[round].ended = 0\n    games[round].endTime = 0", 
+   "./0x00676065a7854163c6a4d5f474496514d03e31c4_ext.sol:284:13: Warning: Integer Overflow.\n            p.reward\nInteger Overflow occurs if:\n    games[p.currentRound].ended = 0\n    games[round].endTime = 1", 
+   "./0x00676065a7854163c6a4d5f474496514d03e31c4_ext.sol:87:5: Warning: Integer Overflow.\n    mapping(uint256 => Game) public games", 
+   "./0x00676065a7854163c6a4d5f474496514d03e31c4_ext.sol:293:13: Warning: Integer Overflow.\n            p.lastRound\nInteger Overflow occurs if:\n    games[p.currentRound].ended = 255\n    games[round].endTime = 1", 
+   "./0x00676065a7854163c6a4d5f474496514d03e31c4_ext.sol:280:28: Warning: Integer Overflow.\n        uint256 balance  = p.reward\nInteger Overflow occurs if:\n    games[p.currentRound].ended = 0\n    games[round].endTime = 1", 
+   "./0x00676065a7854163c6a4d5f474496514d03e31c4_ext.sol:91:5: Warning: Integer Overflow.\n    mapping(address => Player) public players", 
+   "./0x00676065a7854163c6a4d5f474496514d03e31c4_ext.sol:295:37: Warning: Integer Overflow.\n            p.reward = SafeMath.add(p.reward\nInteger Overflow occurs if:\n    games[p.currentRound].ended = 255\n    games[round].endTime = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./0x00676065a7854163c6a4d5f474496514d03e31c4_ext.sol:145:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(addr)"
+   ], 
+   [
+    "./0x00676065a7854163c6a4d5f474496514d03e31c4_ext.sol:282:14: Warning: Transaction-Ordering Dependency.\n             _addr.transfer(balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.3"
+}

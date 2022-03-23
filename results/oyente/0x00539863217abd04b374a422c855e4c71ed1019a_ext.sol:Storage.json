@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:25:5: Warning: Integer Overflow.\n    storedAmount += msg.value\nInteger Overflow occurs if:\n    storedAmount = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:39:5: Warning: Transaction-Ordering Dependency.\n    to.transfer(this.balance)"
+   ], 
+   [
+    "./0x00539863217abd04b374a422c855e4c71ed1019a_ext.sol:32:5: Warning: Transaction-Ordering Dependency.\n    owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "96.0"
+}

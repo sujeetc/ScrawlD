@@ -1,0 +1,7 @@
+rm: cannot remove './0x009f0e67dbaf4644603c0660e974cf5e34726481_ext_mythril.txt': No such file or directory
+rm: cannot remove './0x009f0e67dbaf4644603c0660e974cf5e34726481_ext_mythril.json': No such file or directory
+rm: cannot remove './0x009f0e67dbaf4644603c0660e974cf5e34726481_ext_mythril_time.txt': No such file or directory
+
+real	0m3.871s
+user	0m3.915s
+sys	0m1.818s

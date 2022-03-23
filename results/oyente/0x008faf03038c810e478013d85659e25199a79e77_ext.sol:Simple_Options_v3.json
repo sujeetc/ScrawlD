@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./0x008faf03038c810e478013d85659e25199a79e77_ext.sol:226:24: Warning: Callstack Depth Attack Vulnerability.\n        bool sentfee = feeAddress.send(feeAmount)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x008faf03038c810e478013d85659e25199a79e77_ext.sol:123:25: Warning: Integer Overflow.\n    User memory _user = _round.users\nInteger Overflow occurs if:\n    _numRound = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    currentRound = 28948022309329048855892746252171976963317496166410141009864396001978282409984", 
+   "./0x008faf03038c810e478013d85659e25199a79e77_ext.sol:150:22: Warning: Integer Overflow.\n    currentPotSize = currentPotSize + msg.value\nInteger Overflow occurs if:\n    currentPotSize = 89660649888868366171417216235708288031085258661234677303951427843448891257349"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "33.2"
+}

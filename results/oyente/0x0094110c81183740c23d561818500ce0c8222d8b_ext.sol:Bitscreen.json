@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./0x0094110c81183740c23d561818500ce0c8222d8b_ext.sol:60:5: Warning: Integer Underflow.\n    ScreenData public screenstate", 
+   "./0x0094110c81183740c23d561818500ce0c8222d8b_ext.sol:149:44: Warning: Integer Underflow.\n        uint ellapsedPeriodsSinceLastBid= (now - screenstate.currTopBidTimeStamp\nInteger Underflow occurs if:\n    screenstate.currTopBidTimeStamp = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.3"
+}

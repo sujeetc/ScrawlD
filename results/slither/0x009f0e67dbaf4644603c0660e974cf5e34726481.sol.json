@@ -1,0 +1,2867 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "safeMult",
+            "source_mapping": {
+              "start": 378,
+              "length": 160,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "SafeMath",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 515,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "safeMult(uint256,uint256)"
+            }
+          }
+        ],
+        "description": "SafeMath.safeMult(uint256,uint256) (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#16-20) is never used and should be removed\n",
+        "markdown": "[SafeMath.safeMult(uint256,uint256)](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L16-L20) is never used and should be removed\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L16-L20",
+        "id": "9d2444a45cc8e2cb094ae80bb0b96973c8a87864f2725887aee40ad7dcff86fe",
+        "check": "dead-code",
+        "impact": "Informational",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "pragma",
+            "name": "^0.4.13",
+            "source_mapping": {
+              "start": 0,
+              "length": 24,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                1
+              ],
+              "starting_column": 1,
+              "ending_column": 25
+            },
+            "type_specific_fields": {
+              "directive": [
+                "solidity",
+                "^",
+                "0.4",
+                ".13"
+              ]
+            }
+          }
+        ],
+        "description": "Pragma version^0.4.13 (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#1) allows old versions\n",
+        "markdown": "Pragma version[^0.4.13](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L1) allows old versions\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L1",
+        "id": "4db7f884eb91bf4655e632d62f36672a22fdb9b335a28879afa8763e88bce0b8",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [],
+        "description": "solc-0.4.13 is not recommended for deployment\n",
+        "markdown": "solc-0.4.13 is not recommended for deployment\n",
+        "first_markdown_element": "",
+        "id": "b530e0d8705c8bba02e9b4f64f071ea97a25be63ed3b9a9bd5aa03d5f85c88b3",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_to",
+            "source_mapping": {
+              "start": 1519,
+              "length": 11,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                47
+              ],
+              "starting_column": 23,
+              "ending_column": 34
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 1501,
+                  "length": 462,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "StandardToken",
+                    "source_mapping": {
+                      "start": 1217,
+                      "length": 1902,
+                      "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55,
+                        56,
+                        57,
+                        58,
+                        59,
+                        60,
+                        61,
+                        62,
+                        63,
+                        64,
+                        65,
+                        66,
+                        67,
+                        68,
+                        69,
+                        70,
+                        71,
+                        72,
+                        73,
+                        74,
+                        75,
+                        76,
+                        77,
+                        78,
+                        79,
+                        80,
+                        81,
+                        82,
+                        83,
+                        84,
+                        85,
+                        86,
+                        87,
+                        88,
+                        89,
+                        90,
+                        91,
+                        92,
+                        93,
+                        94
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "transfer(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter StandardToken.transfer(address,uint256)._to (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#47) is not in mixedCase\n",
+        "markdown": "Parameter [StandardToken.transfer(address,uint256)._to](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L47) is not in mixedCase\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L47",
+        "id": "3c14db6b6c1ab6ca2562962944c2cf0cfbb75024bfc8414a346a102288fb8c42",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_value",
+            "source_mapping": {
+              "start": 1532,
+              "length": 14,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                47
+              ],
+              "starting_column": 36,
+              "ending_column": 50
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 1501,
+                  "length": 462,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "StandardToken",
+                    "source_mapping": {
+                      "start": 1217,
+                      "length": 1902,
+                      "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55,
+                        56,
+                        57,
+                        58,
+                        59,
+                        60,
+                        61,
+                        62,
+                        63,
+                        64,
+                        65,
+                        66,
+                        67,
+                        68,
+                        69,
+                        70,
+                        71,
+                        72,
+                        73,
+                        74,
+                        75,
+                        76,
+                        77,
+                        78,
+                        79,
+                        80,
+                        81,
+                        82,
+                        83,
+                        84,
+                        85,
+                        86,
+                        87,
+                        88,
+                        89,
+                        90,
+                        91,
+                        92,
+                        93,
+                        94
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "transfer(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter StandardToken.transfer(address,uint256)._value (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#47) is not in mixedCase\n",
+        "markdown": "Parameter [StandardToken.transfer(address,uint256)._value](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L47) is not in mixedCase\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L47",
+        "id": "31af0fe2efb3149a68bb2fd105d1476f896dc61d738c336bdf7e41a57feb1479",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_from",
+            "source_mapping": {
+              "start": 1993,
+              "length": 13,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                60
+              ],
+              "starting_column": 27,
+              "ending_column": 40
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transferFrom",
+                "source_mapping": {
+                  "start": 1971,
+                  "length": 593,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "StandardToken",
+                    "source_mapping": {
+                      "start": 1217,
+                      "length": 1902,
+                      "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55,
+                        56,
+                        57,
+                        58,
+                        59,
+                        60,
+                        61,
+                        62,
+                        63,
+                        64,
+                        65,
+                        66,
+                        67,
+                        68,
+                        69,
+                        70,
+                        71,
+                        72,
+                        73,
+                        74,
+                        75,
+                        76,
+                        77,
+                        78,
+                        79,
+                        80,
+                        81,
+                        82,
+                        83,
+                        84,
+                        85,
+                        86,
+                        87,
+                        88,
+                        89,
+                        90,
+                        91,
+                        92,
+                        93,
+                        94
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "transferFrom(address,address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter StandardToken.transferFrom(address,address,uint256)._from (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#60) is not in mixedCase\n",
+        "markdown": "Parameter [StandardToken.transferFrom(address,address,uint256)._from](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L60) is not in mixedCase\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L60",
+        "id": "4dd3d547c81f2913d544b98793a5c021fe472f59b45114f773a817330cf34bfc",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_to",
+            "source_mapping": {
+              "start": 2008,
+              "length": 11,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                60
+              ],
+              "starting_column": 42,
+              "ending_column": 53
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transferFrom",
+                "source_mapping": {
+                  "start": 1971,
+                  "length": 593,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "StandardToken",
+                    "source_mapping": {
+                      "start": 1217,
+                      "length": 1902,
+                      "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55,
+                        56,
+                        57,
+                        58,
+                        59,
+                        60,
+                        61,
+                        62,
+                        63,
+                        64,
+                        65,
+                        66,
+                        67,
+                        68,
+                        69,
+                        70,
+                        71,
+                        72,
+                        73,
+                        74,
+                        75,
+                        76,
+                        77,
+                        78,
+                        79,
+                        80,
+                        81,
+                        82,
+                        83,
+                        84,
+                        85,
+                        86,
+                        87,
+                        88,
+                        89,
+                        90,
+                        91,
+                        92,
+                        93,
+                        94
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "transferFrom(address,address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter StandardToken.transferFrom(address,address,uint256)._to (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#60) is not in mixedCase\n",
+        "markdown": "Parameter [StandardToken.transferFrom(address,address,uint256)._to](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L60) is not in mixedCase\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L60",
+        "id": "6150a62fc365f4a97437d70d15bfe1ca02b48e7695b0f9d432eb82ac34404d51",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_value",
+            "source_mapping": {
+              "start": 2021,
+              "length": 14,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                60
+              ],
+              "starting_column": 55,
+              "ending_column": 69
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transferFrom",
+                "source_mapping": {
+                  "start": 1971,
+                  "length": 593,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "StandardToken",
+                    "source_mapping": {
+                      "start": 1217,
+                      "length": 1902,
+                      "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55,
+                        56,
+                        57,
+                        58,
+                        59,
+                        60,
+                        61,
+                        62,
+                        63,
+                        64,
+                        65,
+                        66,
+                        67,
+                        68,
+                        69,
+                        70,
+                        71,
+                        72,
+                        73,
+                        74,
+                        75,
+                        76,
+                        77,
+                        78,
+                        79,
+                        80,
+                        81,
+                        82,
+                        83,
+                        84,
+                        85,
+                        86,
+                        87,
+                        88,
+                        89,
+                        90,
+                        91,
+                        92,
+                        93,
+                        94
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "transferFrom(address,address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter StandardToken.transferFrom(address,address,uint256)._value (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#60) is not in mixedCase\n",
+        "markdown": "Parameter [StandardToken.transferFrom(address,address,uint256)._value](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L60) is not in mixedCase\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L60",
+        "id": "e001d55ad5c9886aa799c28ded83887106a3cdbd6a17edfcc0db2c6ef55090d3",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_owner",
+            "source_mapping": {
+              "start": 2591,
+              "length": 14,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                74
+              ],
+              "starting_column": 24,
+              "ending_column": 38
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "balanceOf",
+                "source_mapping": {
+                  "start": 2572,
+                  "length": 112,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    74,
+                    75,
+                    76
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "StandardToken",
+                    "source_mapping": {
+                      "start": 1217,
+                      "length": 1902,
+                      "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55,
+                        56,
+                        57,
+                        58,
+                        59,
+                        60,
+                        61,
+                        62,
+                        63,
+                        64,
+                        65,
+                        66,
+                        67,
+                        68,
+                        69,
+                        70,
+                        71,
+                        72,
+                        73,
+                        74,
+                        75,
+                        76,
+                        77,
+                        78,
+                        79,
+                        80,
+                        81,
+                        82,
+                        83,
+                        84,
+                        85,
+                        86,
+                        87,
+                        88,
+                        89,
+                        90,
+                        91,
+                        92,
+                        93,
+                        94
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "balanceOf(address)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter StandardToken.balanceOf(address)._owner (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#74) is not in mixedCase\n",
+        "markdown": "Parameter [StandardToken.balanceOf(address)._owner](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L74) is not in mixedCase\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L74",
+        "id": "e2c602baa3f6215dc1bf4b8f0abe23563363fc889add3f48a208eb560cfca631",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_spender",
+            "source_mapping": {
+              "start": 2709,
+              "length": 16,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                78
+              ],
+              "starting_column": 22,
+              "ending_column": 38
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "approve",
+                "source_mapping": {
+                  "start": 2692,
+                  "length": 236,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    78,
+                    79,
+                    80,
+                    81,
+                    82,
+                    83,
+                    84,
+                    85
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "StandardToken",
+                    "source_mapping": {
+                      "start": 1217,
+                      "length": 1902,
+                      "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55,
+                        56,
+                        57,
+                        58,
+                        59,
+                        60,
+                        61,
+                        62,
+                        63,
+                        64,
+                        65,
+                        66,
+                        67,
+                        68,
+                        69,
+                        70,
+                        71,
+                        72,
+                        73,
+                        74,
+                        75,
+                        76,
+                        77,
+                        78,
+                        79,
+                        80,
+                        81,
+                        82,
+                        83,
+                        84,
+                        85,
+                        86,
+                        87,
+                        88,
+                        89,
+                        90,
+                        91,
+                        92,
+                        93,
+                        94
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "approve(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter StandardToken.approve(address,uint256)._spender (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#78) is not in mixedCase\n",
+        "markdown": "Parameter [StandardToken.approve(address,uint256)._spender](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L78) is not in mixedCase\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L78",
+        "id": "70a9b4c8c2d4dca0d12170ecce3b3b3e56f16721a930795c44e5e7b45a10a5c1",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_value",
+            "source_mapping": {
+              "start": 2727,
+              "length": 14,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                78
+              ],
+              "starting_column": 40,
+              "ending_column": 54
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "approve",
+                "source_mapping": {
+                  "start": 2692,
+                  "length": 236,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    78,
+                    79,
+                    80,
+                    81,
+                    82,
+                    83,
+                    84,
+                    85
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "StandardToken",
+                    "source_mapping": {
+                      "start": 1217,
+                      "length": 1902,
+                      "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55,
+                        56,
+                        57,
+                        58,
+                        59,
+                        60,
+                        61,
+                        62,
+                        63,
+                        64,
+                        65,
+                        66,
+                        67,
+                        68,
+                        69,
+                        70,
+                        71,
+                        72,
+                        73,
+                        74,
+                        75,
+                        76,
+                        77,
+                        78,
+                        79,
+                        80,
+                        81,
+                        82,
+                        83,
+                        84,
+                        85,
+                        86,
+                        87,
+                        88,
+                        89,
+                        90,
+                        91,
+                        92,
+                        93,
+                        94
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "approve(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter StandardToken.approve(address,uint256)._value (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#78) is not in mixedCase\n",
+        "markdown": "Parameter [StandardToken.approve(address,uint256)._value](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L78) is not in mixedCase\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L78",
+        "id": "1fa3f5bb048f68171399fc7d36b8e34d891cac5b9e22c65b41391d16050e7922",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_owner",
+            "source_mapping": {
+              "start": 2955,
+              "length": 14,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                87
+              ],
+              "starting_column": 24,
+              "ending_column": 38
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "allowance",
+                "source_mapping": {
+                  "start": 2936,
+                  "length": 180,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    87,
+                    88,
+                    89,
+                    90,
+                    91,
+                    92,
+                    93
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "StandardToken",
+                    "source_mapping": {
+                      "start": 1217,
+                      "length": 1902,
+                      "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55,
+                        56,
+                        57,
+                        58,
+                        59,
+                        60,
+                        61,
+                        62,
+                        63,
+                        64,
+                        65,
+                        66,
+                        67,
+                        68,
+                        69,
+                        70,
+                        71,
+                        72,
+                        73,
+                        74,
+                        75,
+                        76,
+                        77,
+                        78,
+                        79,
+                        80,
+                        81,
+                        82,
+                        83,
+                        84,
+                        85,
+                        86,
+                        87,
+                        88,
+                        89,
+                        90,
+                        91,
+                        92,
+                        93,
+                        94
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "allowance(address,address)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter StandardToken.allowance(address,address)._owner (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#87) is not in mixedCase\n",
+        "markdown": "Parameter [StandardToken.allowance(address,address)._owner](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L87) is not in mixedCase\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L87",
+        "id": "317c0e860cb8a5338f5dfaf51d2249bbf1eb4e87ed588c7a888b367544a25740",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_spender",
+            "source_mapping": {
+              "start": 2971,
+              "length": 16,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                87
+              ],
+              "starting_column": 40,
+              "ending_column": 56
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "allowance",
+                "source_mapping": {
+                  "start": 2936,
+                  "length": 180,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    87,
+                    88,
+                    89,
+                    90,
+                    91,
+                    92,
+                    93
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "StandardToken",
+                    "source_mapping": {
+                      "start": 1217,
+                      "length": 1902,
+                      "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55,
+                        56,
+                        57,
+                        58,
+                        59,
+                        60,
+                        61,
+                        62,
+                        63,
+                        64,
+                        65,
+                        66,
+                        67,
+                        68,
+                        69,
+                        70,
+                        71,
+                        72,
+                        73,
+                        74,
+                        75,
+                        76,
+                        77,
+                        78,
+                        79,
+                        80,
+                        81,
+                        82,
+                        83,
+                        84,
+                        85,
+                        86,
+                        87,
+                        88,
+                        89,
+                        90,
+                        91,
+                        92,
+                        93,
+                        94
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "allowance(address,address)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter StandardToken.allowance(address,address)._spender (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#87) is not in mixedCase\n",
+        "markdown": "Parameter [StandardToken.allowance(address,address)._spender](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L87) is not in mixedCase\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L87",
+        "id": "1dfe198c2dca57c55bebb6453f93f0f0fc9b1e67fc091a4bcfa314300d9a90a6",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "INITIAL_SUPPLY",
+            "source_mapping": {
+              "start": 3488,
+              "length": 50,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                106
+              ],
+              "starting_column": 3,
+              "ending_column": 53
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "PrivateCityTokens",
+                "source_mapping": {
+                  "start": 3322,
+                  "length": 428,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    100,
+                    101,
+                    102,
+                    103,
+                    104,
+                    105,
+                    106,
+                    107,
+                    108,
+                    109,
+                    110,
+                    111,
+                    112,
+                    113,
+                    114,
+                    115,
+                    116,
+                    117,
+                    118
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "variable",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Variable PrivateCityTokens.INITIAL_SUPPLY (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#106) is not in mixedCase\n",
+        "markdown": "Variable [PrivateCityTokens.INITIAL_SUPPLY](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L106) is not in mixedCase\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L106",
+        "id": "f95718a447a1bad4617863e2bb3e0ac154528871876e41d0224b3408b2364898",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "slitherConstructorVariables",
+            "source_mapping": {
+              "start": 3322,
+              "length": 428,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106,
+                107,
+                108,
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118
+              ],
+              "starting_column": 1,
+              "ending_column": 0
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "PrivateCityTokens",
+                "source_mapping": {
+                  "start": 3322,
+                  "length": 428,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    100,
+                    101,
+                    102,
+                    103,
+                    104,
+                    105,
+                    106,
+                    107,
+                    108,
+                    109,
+                    110,
+                    111,
+                    112,
+                    113,
+                    114,
+                    115,
+                    116,
+                    117,
+                    118
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "slitherConstructorVariables()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "INITIAL_SUPPLY = 16000000 * 1000000000000000000",
+            "source_mapping": {
+              "start": 3488,
+              "length": 50,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                106
+              ],
+              "starting_column": 3,
+              "ending_column": 53
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "slitherConstructorVariables",
+                "source_mapping": {
+                  "start": 3322,
+                  "length": 428,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    100,
+                    101,
+                    102,
+                    103,
+                    104,
+                    105,
+                    106,
+                    107,
+                    108,
+                    109,
+                    110,
+                    111,
+                    112,
+                    113,
+                    114,
+                    115,
+                    116,
+                    117,
+                    118
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "PrivateCityTokens",
+                    "source_mapping": {
+                      "start": 3322,
+                      "length": 428,
+                      "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        100,
+                        101,
+                        102,
+                        103,
+                        104,
+                        105,
+                        106,
+                        107,
+                        108,
+                        109,
+                        110,
+                        111,
+                        112,
+                        113,
+                        114,
+                        115,
+                        116,
+                        117,
+                        118
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "slitherConstructorVariables()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "PrivateCityTokens.slitherConstructorVariables() (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#100-118) uses literals with too many digits:\n\t- INITIAL_SUPPLY = 16000000 * 1000000000000000000 (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#106)\n",
+        "markdown": "[PrivateCityTokens.slitherConstructorVariables()](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L100-L118) uses literals with too many digits:\n\t- [INITIAL_SUPPLY = 16000000 * 1000000000000000000](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L106)\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L100-L118",
+        "id": "ae4bb8f8344c119343f2d301bc2d9ab95562ea26f4e4659554e9aa62ba3f9d65",
+        "check": "too-many-digits",
+        "impact": "Informational",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "INITIAL_SUPPLY",
+            "source_mapping": {
+              "start": 3488,
+              "length": 50,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                106
+              ],
+              "starting_column": 3,
+              "ending_column": 53
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "PrivateCityTokens",
+                "source_mapping": {
+                  "start": 3322,
+                  "length": 428,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    100,
+                    101,
+                    102,
+                    103,
+                    104,
+                    105,
+                    106,
+                    107,
+                    108,
+                    109,
+                    110,
+                    111,
+                    112,
+                    113,
+                    114,
+                    115,
+                    116,
+                    117,
+                    118
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              }
+            }
+          }
+        ],
+        "description": "PrivateCityTokens.INITIAL_SUPPLY (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#106) should be constant\n",
+        "markdown": "[PrivateCityTokens.INITIAL_SUPPLY](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L106) should be constant\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L106",
+        "id": "df16f82b49e4996ad8a0ff59f361cf909be5f7e6f9922f8cc2d5ef43f608f989",
+        "check": "constable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "decimals",
+            "source_mapping": {
+              "start": 3455,
+              "length": 28,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                105
+              ],
+              "starting_column": 3,
+              "ending_column": 31
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "PrivateCityTokens",
+                "source_mapping": {
+                  "start": 3322,
+                  "length": 428,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    100,
+                    101,
+                    102,
+                    103,
+                    104,
+                    105,
+                    106,
+                    107,
+                    108,
+                    109,
+                    110,
+                    111,
+                    112,
+                    113,
+                    114,
+                    115,
+                    116,
+                    117,
+                    118
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              }
+            }
+          }
+        ],
+        "description": "PrivateCityTokens.decimals (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#105) should be constant\n",
+        "markdown": "[PrivateCityTokens.decimals](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L105) should be constant\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L105",
+        "id": "a3e62b9211be0f1e9afaaf6a9fa23401802f53f4819164ca110dddefdbca1636",
+        "check": "constable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "name",
+            "source_mapping": {
+              "start": 3375,
+              "length": 42,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                103
+              ],
+              "starting_column": 3,
+              "ending_column": 45
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "PrivateCityTokens",
+                "source_mapping": {
+                  "start": 3322,
+                  "length": 428,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    100,
+                    101,
+                    102,
+                    103,
+                    104,
+                    105,
+                    106,
+                    107,
+                    108,
+                    109,
+                    110,
+                    111,
+                    112,
+                    113,
+                    114,
+                    115,
+                    116,
+                    117,
+                    118
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              }
+            }
+          }
+        ],
+        "description": "PrivateCityTokens.name (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#103) should be constant\n",
+        "markdown": "[PrivateCityTokens.name](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L103) should be constant\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L103",
+        "id": "82add5e9e046c89fad169d832c869faa862dec0f8ca613d5f94b85e3402aed84",
+        "check": "constable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "symbol",
+            "source_mapping": {
+              "start": 3422,
+              "length": 28,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                104
+              ],
+              "starting_column": 3,
+              "ending_column": 31
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "PrivateCityTokens",
+                "source_mapping": {
+                  "start": 3322,
+                  "length": 428,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    100,
+                    101,
+                    102,
+                    103,
+                    104,
+                    105,
+                    106,
+                    107,
+                    108,
+                    109,
+                    110,
+                    111,
+                    112,
+                    113,
+                    114,
+                    115,
+                    116,
+                    117,
+                    118
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              }
+            }
+          }
+        ],
+        "description": "PrivateCityTokens.symbol (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#104) should be constant\n",
+        "markdown": "[PrivateCityTokens.symbol](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L104) should be constant\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L104",
+        "id": "c7710ef168846b3863358dc286fa029174bb46c953ea7093493f7d1a5464c5eb",
+        "check": "constable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "balanceOf",
+            "source_mapping": {
+              "start": 2572,
+              "length": 112,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                74,
+                75,
+                76
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "StandardToken",
+                "source_mapping": {
+                  "start": 1217,
+                  "length": 1902,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72,
+                    73,
+                    74,
+                    75,
+                    76,
+                    77,
+                    78,
+                    79,
+                    80,
+                    81,
+                    82,
+                    83,
+                    84,
+                    85,
+                    86,
+                    87,
+                    88,
+                    89,
+                    90,
+                    91,
+                    92,
+                    93,
+                    94
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "balanceOf(address)"
+            }
+          },
+          {
+            "type": "function",
+            "name": "balanceOf",
+            "source_mapping": {
+              "start": 602,
+              "length": 70,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                26
+              ],
+              "starting_column": 5,
+              "ending_column": 75
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Token",
+                "source_mapping": {
+                  "start": 545,
+                  "length": 647,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "balanceOf(address)"
+            }
+          }
+        ],
+        "description": "balanceOf(address) should be declared external:\n\t- StandardToken.balanceOf(address) (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#74-76)\n\t- Token.balanceOf(address) (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#26)\n",
+        "markdown": "balanceOf(address) should be declared external:\n\t- [StandardToken.balanceOf(address)](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L74-L76)\n\t- [Token.balanceOf(address)](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L26)\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L74-L76",
+        "id": "f371bf24bb9089b4694dcc2d1aaf681fa7a925a94c72efd2bf37dc36fbd4276b",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 1501,
+              "length": 462,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "StandardToken",
+                "source_mapping": {
+                  "start": 1217,
+                  "length": 1902,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72,
+                    73,
+                    74,
+                    75,
+                    76,
+                    77,
+                    78,
+                    79,
+                    80,
+                    81,
+                    82,
+                    83,
+                    84,
+                    85,
+                    86,
+                    87,
+                    88,
+                    89,
+                    90,
+                    91,
+                    92,
+                    93,
+                    94
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "transfer(address,uint256)"
+            }
+          },
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 678,
+              "length": 70,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                27
+              ],
+              "starting_column": 5,
+              "ending_column": 75
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Token",
+                "source_mapping": {
+                  "start": 545,
+                  "length": 647,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "transfer(address,uint256)"
+            }
+          }
+        ],
+        "description": "transfer(address,uint256) should be declared external:\n\t- StandardToken.transfer(address,uint256) (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#47-58)\n\t- Token.transfer(address,uint256) (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#27)\n",
+        "markdown": "transfer(address,uint256) should be declared external:\n\t- [StandardToken.transfer(address,uint256)](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L47-L58)\n\t- [Token.transfer(address,uint256)](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L27)\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L47-L58",
+        "id": "d8f39903b98ac0a6f503a22bf4f823bca01ea367e0ba630bbe08825319c1e1bc",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transferFrom",
+            "source_mapping": {
+              "start": 1971,
+              "length": 593,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "StandardToken",
+                "source_mapping": {
+                  "start": 1217,
+                  "length": 1902,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72,
+                    73,
+                    74,
+                    75,
+                    76,
+                    77,
+                    78,
+                    79,
+                    80,
+                    81,
+                    82,
+                    83,
+                    84,
+                    85,
+                    86,
+                    87,
+                    88,
+                    89,
+                    90,
+                    91,
+                    92,
+                    93,
+                    94
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "transferFrom(address,address,uint256)"
+            }
+          },
+          {
+            "type": "function",
+            "name": "transferFrom",
+            "source_mapping": {
+              "start": 754,
+              "length": 89,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                28
+              ],
+              "starting_column": 5,
+              "ending_column": 94
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Token",
+                "source_mapping": {
+                  "start": 545,
+                  "length": 647,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "transferFrom(address,address,uint256)"
+            }
+          }
+        ],
+        "description": "transferFrom(address,address,uint256) should be declared external:\n\t- StandardToken.transferFrom(address,address,uint256) (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#60-72)\n\t- Token.transferFrom(address,address,uint256) (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#28)\n",
+        "markdown": "transferFrom(address,address,uint256) should be declared external:\n\t- [StandardToken.transferFrom(address,address,uint256)](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L60-L72)\n\t- [Token.transferFrom(address,address,uint256)](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L28)\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L60-L72",
+        "id": "a4edb971bb95c18dc89b364c3208566e10ad467bb6598eda02842cfbeddda810",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "approve",
+            "source_mapping": {
+              "start": 2692,
+              "length": 236,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "StandardToken",
+                "source_mapping": {
+                  "start": 1217,
+                  "length": 1902,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72,
+                    73,
+                    74,
+                    75,
+                    76,
+                    77,
+                    78,
+                    79,
+                    80,
+                    81,
+                    82,
+                    83,
+                    84,
+                    85,
+                    86,
+                    87,
+                    88,
+                    89,
+                    90,
+                    91,
+                    92,
+                    93,
+                    94
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "approve(address,uint256)"
+            }
+          },
+          {
+            "type": "function",
+            "name": "approve",
+            "source_mapping": {
+              "start": 849,
+              "length": 74,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                29
+              ],
+              "starting_column": 5,
+              "ending_column": 79
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Token",
+                "source_mapping": {
+                  "start": 545,
+                  "length": 647,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "approve(address,uint256)"
+            }
+          }
+        ],
+        "description": "approve(address,uint256) should be declared external:\n\t- StandardToken.approve(address,uint256) (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#78-85)\n\t- Token.approve(address,uint256) (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#29)\n",
+        "markdown": "approve(address,uint256) should be declared external:\n\t- [StandardToken.approve(address,uint256)](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L78-L85)\n\t- [Token.approve(address,uint256)](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L29)\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L78-L85",
+        "id": "14a61f44abc9513f830121068dee6bf8c43f2dbd936a9f3573e315afbabe0014",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "allowance",
+            "source_mapping": {
+              "start": 2936,
+              "length": 180,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "StandardToken",
+                "source_mapping": {
+                  "start": 1217,
+                  "length": 1902,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72,
+                    73,
+                    74,
+                    75,
+                    76,
+                    77,
+                    78,
+                    79,
+                    80,
+                    81,
+                    82,
+                    83,
+                    84,
+                    85,
+                    86,
+                    87,
+                    88,
+                    89,
+                    90,
+                    91,
+                    92,
+                    93,
+                    94
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "allowance(address,address)"
+            }
+          },
+          {
+            "type": "function",
+            "name": "allowance",
+            "source_mapping": {
+              "start": 929,
+              "length": 90,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                30
+              ],
+              "starting_column": 5,
+              "ending_column": 95
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Token",
+                "source_mapping": {
+                  "start": 545,
+                  "length": 647,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_relative": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "filename_short": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "allowance(address,address)"
+            }
+          }
+        ],
+        "description": "allowance(address,address) should be declared external:\n\t- StandardToken.allowance(address,address) (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#87-93)\n\t- Token.allowance(address,address) (0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#30)\n",
+        "markdown": "allowance(address,address) should be declared external:\n\t- [StandardToken.allowance(address,address)](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L87-L93)\n\t- [Token.allowance(address,address)](0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L30)\n",
+        "first_markdown_element": "0x009f0e67dbaf4644603c0660e974cf5e34726481_ext.sol#L87-L93",
+        "id": "7ff5d9a88efd43e3f661b9a64c5998c6e69a12942b367add24d9a7f993253002",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      }
+    ]
+  }
+}

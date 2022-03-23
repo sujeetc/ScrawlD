@@ -1,0 +1,478 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "sendInBatch",
+            "source_mapping": {
+              "start": 482,
+              "length": 281,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasManager",
+                "source_mapping": {
+                  "start": 407,
+                  "length": 359,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "sendInBatch(address[],uint256[])"
+            }
+          },
+          {
+            "type": "node",
+            "name": "toAddressList[i].transfer(amountList[i])",
+            "source_mapping": {
+              "start": 704,
+              "length": 40,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                30
+              ],
+              "starting_column": 13,
+              "ending_column": 53
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "sendInBatch",
+                "source_mapping": {
+                  "start": 482,
+                  "length": 281,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GasManager",
+                    "source_mapping": {
+                      "start": 407,
+                      "length": 359,
+                      "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                      "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                      "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                      "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "sendInBatch(address[],uint256[])"
+                }
+              }
+            }
+          }
+        ],
+        "description": "GasManager.sendInBatch(address[],uint256[]) (0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#26-32) has external calls inside a loop: toAddressList[i].transfer(amountList[i]) (0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#30)\n",
+        "markdown": "[GasManager.sendInBatch(address[],uint256[])](0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L26-L32) has external calls inside a loop: [toAddressList[i].transfer(amountList[i])](0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L30)\n",
+        "first_markdown_element": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L26-L32",
+        "id": "0be04882e2d05e85c7d62fb3d9943fd9d4308f55c3af0f34dbaf3c948d965614",
+        "check": "calls-loop",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "pragma",
+            "name": "^0.4.24",
+            "source_mapping": {
+              "start": 0,
+              "length": 24,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                1
+              ],
+              "starting_column": 1,
+              "ending_column": 25
+            },
+            "type_specific_fields": {
+              "directive": [
+                "solidity",
+                "^",
+                "0.4",
+                ".24"
+              ]
+            }
+          }
+        ],
+        "description": "Pragma version^0.4.24 (0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#1) allows old versions\n",
+        "markdown": "Pragma version[^0.4.24](0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L1) allows old versions\n",
+        "first_markdown_element": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L1",
+        "id": "168ea27c014abe14f9ab3bf9396c118f4ff4031cd9963db1b1d5169701555ccf",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [],
+        "description": "solc-0.4.24 is not recommended for deployment\n",
+        "markdown": "solc-0.4.24 is not recommended for deployment\n",
+        "first_markdown_element": "",
+        "id": "4fdaa1943fda7c6196f21cde2a89972a5de2e49314548f4161996d6ef6af4a38",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "contract",
+            "name": "owned",
+            "source_mapping": {
+              "start": 30,
+              "length": 177,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "starting_column": 1,
+              "ending_column": 2
+            },
+            "additional_fields": {
+              "target": "contract",
+              "convention": "CapWords"
+            }
+          }
+        ],
+        "description": "Contract owned (0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#4-13) is not in CapWords\n",
+        "markdown": "Contract [owned](0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L4-L13) is not in CapWords\n",
+        "first_markdown_element": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L4-L13",
+        "id": "01bc58369f2fd81680c634b453fa427ba4b0127f990d30f7be7154dc8da22427",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "balanceOf",
+            "source_mapping": {
+              "start": 235,
+              "length": 81,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                17
+              ],
+              "starting_column": 5,
+              "ending_column": 86
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ERC20",
+                "source_mapping": {
+                  "start": 213,
+                  "length": 188,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "balanceOf(address)"
+            }
+          }
+        ],
+        "description": "balanceOf(address) should be declared external:\n\t- ERC20.balanceOf(address) (0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#17)\n",
+        "markdown": "balanceOf(address) should be declared external:\n\t- [ERC20.balanceOf(address)](0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L17)\n",
+        "first_markdown_element": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L17",
+        "id": "65bc6b7b7be3d1d046f54ea3e07fb7bd7f10415b973d001e8eb15cb65a14d89f",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 322,
+              "length": 76,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                18
+              ],
+              "starting_column": 5,
+              "ending_column": 81
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ERC20",
+                "source_mapping": {
+                  "start": 213,
+                  "length": 188,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "transfer(address,uint256)"
+            }
+          }
+        ],
+        "description": "transfer(address,uint256) should be declared external:\n\t- ERC20.transfer(address,uint256) (0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#18)\n",
+        "markdown": "transfer(address,uint256) should be declared external:\n\t- [ERC20.transfer(address,uint256)](0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L18)\n",
+        "first_markdown_element": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L18",
+        "id": "65c0bed2eaf5bdd4972acc62dd5f416a55f5df9f23946d5be1d9c4a748348131",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "fallback",
+            "source_mapping": {
+              "start": 445,
+              "length": 29,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                24
+              ],
+              "starting_column": 5,
+              "ending_column": 34
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasManager",
+                "source_mapping": {
+                  "start": 407,
+                  "length": 359,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "fallback()"
+            }
+          }
+        ],
+        "description": "fallback() should be declared external:\n\t- GasManager.fallback() (0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#24)\n",
+        "markdown": "fallback() should be declared external:\n\t- [GasManager.fallback()](0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L24)\n",
+        "first_markdown_element": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L24",
+        "id": "4b11c9c7bd934ecc50da5791245b1b57ce3a724b2c6222daf3f0c2706631510c",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "sendInBatch",
+            "source_mapping": {
+              "start": 482,
+              "length": 281,
+              "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+              "is_dependency": false,
+              "lines": [
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GasManager",
+                "source_mapping": {
+                  "start": 407,
+                  "length": 359,
+                  "filename_used": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_relative": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_absolute": "/ethereum-security/Smart-Contract-Benchmark-Suitesss/dataset/UR/0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "filename_short": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "sendInBatch(address[],uint256[])"
+            }
+          }
+        ],
+        "description": "sendInBatch(address[],uint256[]) should be declared external:\n\t- GasManager.sendInBatch(address[],uint256[]) (0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#26-32)\n",
+        "markdown": "sendInBatch(address[],uint256[]) should be declared external:\n\t- [GasManager.sendInBatch(address[],uint256[])](0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L26-L32)\n",
+        "first_markdown_element": "0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol#L26-L32",
+        "id": "1df93dfce82611f29d016d6032eeed578bd643b99f0771374607403616554722",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      }
+    ]
+  }
+}

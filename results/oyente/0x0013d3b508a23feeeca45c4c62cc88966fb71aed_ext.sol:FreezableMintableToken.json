@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x0013d3b508a23feeeca45c4c62cc88966fb71aed_ext.sol:647:16: Warning: Integer Overflow.\n        return super.balanceOf(_owner) + freezingBalance[_owner]\nInteger Overflow occurs if:\n    balances[_owner] = 1\n    freezingBalance[_owner] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./0x0013d3b508a23feeeca45c4c62cc88966fb71aed_ext.sol:82:9: Warning: Integer Overflow.\n    c = a + b\nInteger Overflow occurs if:\n    owner = 0\n    totalSupply_ = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.1"
+}

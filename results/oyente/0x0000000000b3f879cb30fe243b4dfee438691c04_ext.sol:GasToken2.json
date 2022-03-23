@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./0x0000000000b3f879cb30fe243b4dfee438691c04_ext.sol:242:13: Warning: Callstack Depth Attack Vulnerability.\n            mk_contract_address(this, i).call()"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x0000000000b3f879cb30fe243b4dfee438691c04_ext.sol:107:13: Warning: Integer Overflow.\n            s_balances[to] += value\nInteger Overflow occurs if:\n    value = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    s_balances[to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./0x0000000000b3f879cb30fe243b4dfee438691c04_ext.sol:179:16: Warning: Integer Underflow.\n        return s_head - s_tail\nInteger Underflow occurs if:\n    s_head = 0\n    s_tail = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.0"
+}

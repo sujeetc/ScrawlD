@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x004e702aa7e3850f7da045f65da3218059b09381_ext.sol:158:17: Warning: Integer Overflow.\n                rgba[index-1]\nInteger Overflow occurs if:\n    coordinatesToIndex[coordinate] = 1073741824"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "56.8"
+}

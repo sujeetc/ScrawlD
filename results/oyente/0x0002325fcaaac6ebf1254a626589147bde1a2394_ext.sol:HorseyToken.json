@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x0002325fcaaac6ebf1254a626589147bde1a2394_ext.sol:470:5: Warning: Integer Overflow.\n    bytes32[] public all_horses = [bytes32(\"BTC\"),bytes32(\"ETH\"),bytes32(\"LTC\")]", 
+   "./0x0002325fcaaac6ebf1254a626589147bde1a2394_ext.sol:784:14: Warning: Integer Overflow.\n        emit HorseyFreed(tokenId)\nInteger Overflow occurs if:\n    tokenId = 0\n    pendingFeedings[msg.sender].horsey = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    paused = 0", 
+   "./0x0002325fcaaac6ebf1254a626589147bde1a2394_ext.sol:955:9: Warning: Integer Overflow.\n        require(feedingCounter <= stables.carrot_credits(msg.sender),\"Not enough carrots\")\nInteger Overflow occurs if:\n    paused = 0", 
+   "./0x0002325fcaaac6ebf1254a626589147bde1a2394_ext.sol:616:5: Warning: Integer Overflow.\n    mapping(address => FeedingData) public pendingFeedings", 
+   "./0x0002325fcaaac6ebf1254a626589147bde1a2394_ext.sol:974:9: Warning: Integer Overflow.\n        require(pendingFeedings[msg.sender].blockNumber == 0,\"Already feeding\")\nInteger Overflow occurs if:\n    pendingFeedings[msg.sender].blockNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "57.6"
+}

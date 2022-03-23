@@ -1,0 +1,63 @@
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: GasManager
+Function name: fallback
+PC address: 121
+Estimated Gas Usage: 3336 - 78000
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: ./0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol:26
+
+ess[] toAddressList, uint256[] amountList) public onlyOwner {
+        require(toAddressList.length == amountList.length);
+
+        for (uint i = 0; i < toAddressList.length; i++) {
+            toAddressList[i].transfer(amountList[i]);
+        }
+    }
+}
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x0, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: sendInBatch(address[],uint256[]), txdata: 0xd5c514dcffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdc80, value: 0x0
+
+==== Multiple Calls in a Single Transaction ====
+SWC ID: 113
+Severity: Low
+Contract: GasManager
+Function name: fallback
+PC address: 363
+Estimated Gas Usage: 3336 - 78000
+Multiple calls are executed in the same transaction.
+This call is executed following another call within the same transaction. It is possible that the call never gets executed if a prior call fails permanently. This might be caused intentionally by a malicious callee. If possible, refactor the code such that each transaction only executes one external call or make sure that all callees can be trusted (i.e. they’re part of your own codebase).
+--------------------
+In file: ./0x00125893df6ca0792c99601c462764ba5d80268a_ext.sol:30
+
+untList[i]);
+        }
+    }
+}
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: sendInBatch(address[],uint256[]), txdata: 0xd5c514dc800000000000000000000000000000000000000000000000000000000000000080, value: 0x0
+
+

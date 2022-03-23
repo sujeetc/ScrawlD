@@ -1,0 +1,170 @@
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: TzTToken
+Function name: distributeToken(address[],uint256)
+PC address: 624
+Estimated Gas Usage: 31845 - 119694
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: ./0x003f79d7be15dc1ad90ce00e6ea68f335e2b789b_ext.sol:39
+
+resses, uint256 _value) onlyOwner {
+     for (uint i = 0; i < addresses.length; i++) {
+         balances[owner] -= _value * 10**8;
+         balances[addresses[i]] += _value * 10**8;
+         Transfer(owner, addresses[i], _value * 10**8);
+     }
+}
+     
+
+     
+  
+     function totalSupply()
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x40001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: distributeToken(address[],uint256), txdata: 0xa9c7648fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdc, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: TzTToken
+Function name: transfer(address,uint256)
+PC address: 1297
+Estimated Gas Usage: 2300 - 4046
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: ./0x003f79d7be15dc1ad90ce00e6ea68f335e2b789b_ext.sol:63
+
+ces[msg.sender] -= _amo
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: distributeToken(address[],uint256), txdata: 0xa9c7648f82000000000000000000000000000000000000000000000000000000000000034090, value: 0x0
+Caller: [SOMEGUY], function: transfer(address,uint256), txdata: 0xa9059cbb000000000000000000000000aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa78, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: TzTToken
+Function name: distributeToken(address[],uint256)
+PC address: 1501
+Estimated Gas Usage: 31845 - 119694
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: ./0x003f79d7be15dc1ad90ce00e6ea68f335e2b789b_ext.sol:42
+
+ses[i]] += _va
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2000000000000001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: distributeToken(address[],uint256), txdata: 0xa9c7648f800000000000000000000000000000000000000000000000000000000001002002, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: TzTToken
+Function name: distributeToken(address[],uint256)
+PC address: 1505
+Estimated Gas Usage: 31845 - 119694
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: ./0x003f79d7be15dc1ad90ce00e6ea68f335e2b789b_ext.sol:42
+
+    balances[addresses[i]] += _va
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x22004000000000080, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: distributeToken(address[],uint256), txdata: 0xa9c7648f80000000000000000000000000000000000000000000000000000000000000008051, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: TzTToken
+Function name: distributeToken(address[],uint256)
+PC address: 1561
+Estimated Gas Usage: 31845 - 119694
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: ./0x003f79d7be15dc1ad90ce00e6ea68f335e2b789b_ext.sol:42
+
+
+         Transfer(owner, addresses[i], 
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x490f0000000042, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: distributeToken(address[],uint256), txdata: 0xa9c7648f90000000000000000000000000000000000000000000000000000000800080000480, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: TzTToken
+Function name: distributeToken(address[],uint256)
+PC address: 1641
+Estimated Gas Usage: 31845 - 119694
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: ./0x003f79d7be15dc1ad90ce00e6ea68f335e2b789b_ext.sol:50
+
+     function 
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2000000000000001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: distributeToken(address[],uint256), txdata: 0xa9c7648f800000000000000000000000000000000000000000000000000000000001002002, value: 0x0
+
+

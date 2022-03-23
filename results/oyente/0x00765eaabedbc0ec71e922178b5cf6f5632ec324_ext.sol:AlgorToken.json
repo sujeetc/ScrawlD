@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./0x00765eaabedbc0ec71e922178b5cf6f5632ec324_ext.sol:184:3: Warning: Integer Underflow.\n  string public name = \"Algorblock Coin\"", 
+   "./0x00765eaabedbc0ec71e922178b5cf6f5632ec324_ext.sol:185:3: Warning: Integer Underflow.\n  string public symbol = \"ALGOR\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.4"
+}

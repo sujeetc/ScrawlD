@@ -1,0 +1,406 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "contract",
+            "name": "InfraCoin",
+            "source_mapping": {
+              "start": 0,
+              "length": 1567
+            }
+          },
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 939,
+              "length": 429
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "InfraCoin",
+                "source_mapping": {
+                  "start": 0,
+                  "length": 1567
+                }
+              },
+              "signature": "transfer(address,uint256)"
+            }
+          }
+        ],
+        "description": "InfraCoin () has incorrect ERC20 function interface:InfraCoin.transfer(address,uint256) ()\n",
+        "markdown": "[InfraCoin]() has incorrect ERC20 function interface:[InfraCoin.transfer(address,uint256)]()\n",
+        "first_markdown_element": "",
+        "id": "41b46611096d63a8123310f043d378137e6647c4f5aa5d5f7740163ddf42af5d",
+        "check": "erc20-interface",
+        "impact": "Medium",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "node",
+            "name": "",
+            "source_mapping": {
+              "start": 1033,
+              "length": 5
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 939,
+                  "length": 429
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "InfraCoin",
+                    "source_mapping": {
+                      "start": 0,
+                      "length": 1567
+                    }
+                  },
+                  "signature": "transfer(address,uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Deprecated standard detected THROW ():\n\t- Usage of \"throw\" should be replaced with \"revert()\"\n",
+        "markdown": "Deprecated standard detected [THROW]():\n\t- Usage of \"throw\" should be replaced with \"revert()\"\n",
+        "first_markdown_element": "",
+        "id": "f5556cf1c70b64b9e4b1fc32044dd970b5f2c8b9fc21b7971fda01971033f2d5",
+        "check": "deprecated-standards",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [],
+        "description": "solc-0.4.0 is not recommended for deployment\n",
+        "markdown": "solc-0.4.0 is not recommended for deployment\n",
+        "first_markdown_element": "",
+        "id": "e676d9e89e623fa7675baecce41eb7ab21d1d8ec9e856bc5b047e6cfb50b37ca",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_to",
+            "source_mapping": {
+              "start": 957,
+              "length": 11
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 939,
+                  "length": 429
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "InfraCoin",
+                    "source_mapping": {
+                      "start": 0,
+                      "length": 1567
+                    }
+                  },
+                  "signature": "transfer(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter InfraCoin.transfer(address,uint256)._to () is not in mixedCase\n",
+        "markdown": "Parameter [InfraCoin.transfer(address,uint256)._to]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "3dbb51ce52eba80471512ab3da1185126259c9f75d1f854be0633ed5ae82a111",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_value",
+            "source_mapping": {
+              "start": 970,
+              "length": 14
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 939,
+                  "length": 429
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "InfraCoin",
+                    "source_mapping": {
+                      "start": 0,
+                      "length": 1567
+                    }
+                  },
+                  "signature": "transfer(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter InfraCoin.transfer(address,uint256)._value () is not in mixedCase\n",
+        "markdown": "Parameter [InfraCoin.transfer(address,uint256)._value]() is not in mixedCase\n",
+        "first_markdown_element": "",
+        "id": "ed98b3895301b63a669f8dcf6f79cd22056a812fdd08f1a85ccf2972e0885381",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "InfraCoin",
+            "source_mapping": {
+              "start": 532,
+              "length": 377
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "InfraCoin",
+                "source_mapping": {
+                  "start": 0,
+                  "length": 1567
+                }
+              },
+              "signature": "InfraCoin()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "initialSupply = 240000000",
+            "source_mapping": {
+              "start": 567,
+              "length": 25
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "InfraCoin",
+                "source_mapping": {
+                  "start": 532,
+                  "length": 377
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "InfraCoin",
+                    "source_mapping": {
+                      "start": 0,
+                      "length": 1567
+                    }
+                  },
+                  "signature": "InfraCoin()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "InfraCoin.InfraCoin() () uses literals with too many digits:\n\t- initialSupply = 240000000 ()\n",
+        "markdown": "[InfraCoin.InfraCoin()]() uses literals with too many digits:\n\t- [initialSupply = 240000000]()\n",
+        "first_markdown_element": "",
+        "id": "1c2e02aefb6c05bd5197b8b52f1fd79439e46c17f785d03a80dfb29b5b0177a9",
+        "check": "too-many-digits",
+        "impact": "Informational",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "standard",
+            "source_mapping": {
+              "start": 67,
+              "length": 36
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "InfraCoin",
+                "source_mapping": {
+                  "start": 0,
+                  "length": 1567
+                }
+              }
+            }
+          },
+          {
+            "type": "contract",
+            "name": "InfraCoin",
+            "source_mapping": {
+              "start": 0,
+              "length": 1567
+            }
+          }
+        ],
+        "description": "InfraCoin.standard () is never used in InfraCoin ()\n",
+        "markdown": "[InfraCoin.standard]() is never used in [InfraCoin]()\n",
+        "first_markdown_element": "",
+        "id": "156c9b4fe0acb5e54b5e8fea6be6fa1067ae7f845bf7612edc57550d7aa93cfc",
+        "check": "unused-state",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "allowance",
+            "source_mapping": {
+              "start": 363,
+              "length": 66
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "InfraCoin",
+                "source_mapping": {
+                  "start": 0,
+                  "length": 1567
+                }
+              }
+            }
+          },
+          {
+            "type": "contract",
+            "name": "InfraCoin",
+            "source_mapping": {
+              "start": 0,
+              "length": 1567
+            }
+          }
+        ],
+        "description": "InfraCoin.allowance () is never used in InfraCoin ()\n",
+        "markdown": "[InfraCoin.allowance]() is never used in [InfraCoin]()\n",
+        "first_markdown_element": "",
+        "id": "8499d2b50ec7536cde2aa9fa670b0145ad96fc11ac507faf03734c3979b215f3",
+        "check": "unused-state",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "standard",
+            "source_mapping": {
+              "start": 67,
+              "length": 36
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "InfraCoin",
+                "source_mapping": {
+                  "start": 0,
+                  "length": 1567
+                }
+              }
+            }
+          }
+        ],
+        "description": "InfraCoin.standard () should be constant\n",
+        "markdown": "[InfraCoin.standard]() should be constant\n",
+        "first_markdown_element": "",
+        "id": "b40f4cc8a13427b9ea90a0a037d038621c4d1df81f150ed0045d3d20b4587785",
+        "check": "constable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 939,
+              "length": 429
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "InfraCoin",
+                "source_mapping": {
+                  "start": 0,
+                  "length": 1567
+                }
+              },
+              "signature": "transfer(address,uint256)"
+            }
+          }
+        ],
+        "description": "transfer(address,uint256) should be declared external:\n\t- InfraCoin.transfer(address,uint256) ()\n",
+        "markdown": "transfer(address,uint256) should be declared external:\n\t- [InfraCoin.transfer(address,uint256)]()\n",
+        "first_markdown_element": "",
+        "id": "4f22cdf53678c585792b09a7627c3486d3518469bf001136dc7e35c6eef43538",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "fallback",
+            "source_mapping": {
+              "start": 1484,
+              "length": 80
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "InfraCoin",
+                "source_mapping": {
+                  "start": 0,
+                  "length": 1567
+                }
+              },
+              "signature": "fallback()"
+            }
+          }
+        ],
+        "description": "fallback() should be declared external:\n\t- InfraCoin.fallback() ()\n",
+        "markdown": "fallback() should be declared external:\n\t- [InfraCoin.fallback()]()\n",
+        "first_markdown_element": "",
+        "id": "d291be5d8b1ca0a5f7991f7d62d0a27166dd17741a5e857712bf99653ea11776",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      }
+    ]
+  }
+}

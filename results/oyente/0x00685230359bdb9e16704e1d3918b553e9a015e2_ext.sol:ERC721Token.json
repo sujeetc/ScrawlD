@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x00685230359bdb9e16704e1d3918b553e9a015e2_ext.sol:834:12: Warning: Integer Overflow.\n    return allTokens[_index]\nInteger Overflow occurs if:\n    _index = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    allTokens.length = 105782898658114362639998236590588058411517566113314665475433552748888561006559", 
+   "./0x00685230359bdb9e16704e1d3918b553e9a015e2_ext.sol:815:12: Warning: Integer Overflow.\n    return ownedTokens[_owner][_index]\nInteger Overflow occurs if:\n    _index = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    ownedTokens[_owner][_index] = 105782898658114362639998236590588058411517566113314665475433552748888561006559\n    ownedTokensCount[_owner] = 105782898658114362639998236590588058411517566113314665475433552748888561006559\n    _owner = 1461501637330902918203684832716283019655932542975", 
+   "./0x00685230359bdb9e16704e1d3918b553e9a015e2_ext.sol:606:3: Warning: Integer Overflow.\n  function safeTransferFrom(\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./0x00685230359bdb9e16704e1d3918b553e9a015e2_ext.sol:797:5: Warning: Integer Underflow.\n    return tokenURIs[_tokenId]\nInteger Underflow occurs if:\n    return tokenURIs[_tokenId] = 1\n    tokenOwner[_tokenId] = 1461501637330902918203684832716283019655932542975", 
+   "./0x00685230359bdb9e16704e1d3918b553e9a015e2_ext.sol:787:5: Warning: Integer Underflow.\n    return symbol_\nInteger Underflow occurs if:\n    return symbol_ = 1", 
+   "./0x00685230359bdb9e16704e1d3918b553e9a015e2_ext.sol:779:5: Warning: Integer Underflow.\n    return name_\nInteger Underflow occurs if:\n    return name_ = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.8"
+}

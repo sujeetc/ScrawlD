@@ -1,0 +1,115 @@
+{"PORTUGAL_WINS-1":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "42.9684419632", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00762964227f2db1b8c811db1672c97b0ed47946_ext.sol:PORTUGAL_WINS:50:3\nbalanceOf[to] += value\n^\n./0x00762964227f2db1b8c811db1672c97b0ed47946_ext.sol:PORTUGAL_WINS:24:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"PORTUGAL_WINS-2":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "42.2770140171", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00762964227f2db1b8c811db1672c97b0ed47946_ext.sol:PORTUGAL_WINS:50:3\nbalanceOf[to] += value\n^\n./0x00762964227f2db1b8c811db1672c97b0ed47946_ext.sol:PORTUGAL_WINS:24:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"PORTUGAL_WINS-3":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "48.872273922", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00762964227f2db1b8c811db1672c97b0ed47946_ext.sol:PORTUGAL_WINS:50:3\nbalanceOf[to] += value\n^\n./0x00762964227f2db1b8c811db1672c97b0ed47946_ext.sol:PORTUGAL_WINS:24:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"PORTUGAL_WINS-4":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "41.6127347946", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00762964227f2db1b8c811db1672c97b0ed47946_ext.sol:PORTUGAL_WINS:50:3\nbalanceOf[to] += value\n^\n./0x00762964227f2db1b8c811db1672c97b0ed47946_ext.sol:PORTUGAL_WINS:24:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"PORTUGAL_WINS-5":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "41.2089428902", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00762964227f2db1b8c811db1672c97b0ed47946_ext.sol:PORTUGAL_WINS:50:3\nbalanceOf[to] += value\n^\n./0x00762964227f2db1b8c811db1672c97b0ed47946_ext.sol:PORTUGAL_WINS:24:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+},"PORTUGAL_WINS-6":{
+ "execution_paths": "27", 
+ "callstack": false, 
+ "reentrancy": false, 
+ "modulo": false, 
+ "division": false, 
+ "execution_time": "43.4033250809", 
+ "signedness": false, 
+ "evm_code_coverage": "99.9", 
+ "underflow": false, 
+ "time_dependency": false, 
+ "assertion_failure": false, 
+ "timeout": false, 
+ "dead_code": [
+  "STOP "
+ ], 
+ "overflow": "\n./0x00762964227f2db1b8c811db1672c97b0ed47946_ext.sol:PORTUGAL_WINS:50:3\nbalanceOf[to] += value\n^\n./0x00762964227f2db1b8c811db1672c97b0ed47946_ext.sol:PORTUGAL_WINS:24:3\nbalanceOf[to] += value\n^", 
+ "money_concurrency": false, 
+ "truncation": false
+}}

@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./0x00763473e9d7c82f38ed843f021e2558d7422ad8_ext.sol:609:3: Warning: Integer Overflow.\n  function transfer(address _to, uint256 _value, bytes _data) public returns (bool success) {\r\n  ^\nSpanning multiple lines.", 
+   "./0x00763473e9d7c82f38ed843f021e2558d7422ad8_ext.sol:678:10: Warning: Integer Overflow.\n    emit Transfer(_from, _to, _value)\nInteger Overflow occurs if:\n    balances[_owner] = 33043027705477244867818724830150951270976532251658578627440342016107697340928\n    balances[_owner] = 76852956982728533913558519995440660456968874955290008298965214204743405130558\n    allowed[_from][msg.sender] = 76852956982728533913558519995440660456968874955290008298965214204743405130558", 
+   "./0x00763473e9d7c82f38ed843f021e2558d7422ad8_ext.sol:568:3: Warning: Integer Overflow.\n  function transferFrom(\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    balances[_owner] = 33043027705477244867818724830150951270976532251658578627440342016107697340928\n    balances[_owner] = 76852956982728533913558519995440660456968874955290008298965214204743405130558\n    allowed[_from][msg.sender] = 76852956982728533913558519995440660456968874955290008298965214204743405130558", 
+   "./0x00763473e9d7c82f38ed843f021e2558d7422ad8_ext.sol:583:3: Warning: Integer Overflow.\n  function transferFrom(\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./0x00763473e9d7c82f38ed843f021e2558d7422ad8_ext.sol:677:5: Warning: Integer Underflow.\n    IERC223Receiver(_to).tokenFallback(_from, _value, _data)\nInteger Underflow occurs if:\n    balances[_owner] = 33043027705477244867818724830150951270976532251658578627440342016107697340928\n    balances[_owner] = 76852956982728533913558519995440660456968874955290008298965214204743405130558\n    allowed[_from][msg.sender] = 76852956982728533913558519995440660456968874955290008298965214204743405130558", 
+   "./0x00763473e9d7c82f38ed843f021e2558d7422ad8_ext.sol:659:10: Warning: Integer Underflow.\n    emit Transfer(\r\n    ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    balances[_owner] = 57896044618658046289768076216655136562069965932676939647577016078952650890207\n    balances[_owner] = 13439488\n    allowed[_from][msg.sender] = 13439488"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.8"
+}
