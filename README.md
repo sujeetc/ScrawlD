@@ -1,5 +1,16 @@
 # ScrawlD: A Dataset of Real World Ethereum Smart Contracts Labelled with Vulnerabilities
 
+## Please cite our work if you use it 
+ If you use any part of this dataset or entire dataset, please cite our works in your research papers. You can cite our paperes using bibtex as follows
+  
+ @article{yashavant2022scrawld,
+  title={ScrawlD: A Dataset of Real World Ethereum Smart Contracts Labelled with Vulnerabilities},
+  author={Chavhan Sujeet Yashavant, Saurabh Kumar, and Amey Karkare},
+  journal={arXiv preprint arXiv:2202.11409},
+  year={2022}
+}
+
+
 ## Smart Contracts
    data/contracts directory contains 6780 Smart Contracts from Ethereum Blockchain. ScrawlD provides a vulnerability report of these Smart Contracts using five tools. Interested people can parse the vulnerabilities.json file for each bug type by setting thresholds in the "Vulnerabilities" Section and get labels for the Smart Contracts.
 
