@@ -1,7 +1,7 @@
 # ScrawlD: A Dataset of Real World Ethereum Smart Contracts Labelled with Vulnerabilities
 
 ## Note: please cite our work if you use it 
- If you use any part of this dataset or entire dataset, please cite our works in your research papers. You can cite our paper using bibtex as follows
+ If you use any part of this dataset or entire dataset, please cite our works in your research papers. You can cite our [paper](https://arxiv.org/abs/2202.11409) using bibtex as follows
   
  @article{yashavant2022scrawld,
   title={ScrawlD: A Dataset of Real World Ethereum Smart Contracts Labelled with Vulnerabilities},
